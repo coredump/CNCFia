@@ -3,7 +3,7 @@
  boms/
 _*
 bom/*
-*-cache*
 manufactoring/
+fp-*cache*
 digikey*
 sparkfun*
