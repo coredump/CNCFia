@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name digikey-footprints)(type KiCad)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name Kicad_extra_components)(type KiCad)(uri ${KIPRJMOD}/Custom/Kicad_extra_components.pretty)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type KiCad)(uri ${KIPRJMOD}/Custom/LibraryLoader/SamacSys_Parts.pretty)(options "")(descr ""))
+)

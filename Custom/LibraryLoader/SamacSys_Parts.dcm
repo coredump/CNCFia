@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP TB008A-508-02BE
+D Fixed Terminal Blocks screw type, 5.08 , 45 , 2 poles, CUI Blue, slotted screw, PCB mount
+F https://componentsearchengine.com/Datasheets/1/TB008A-508-02BE.pdf
+$ENDCMP
+#
+$CMP TB008A-508-03BE
+D Fixed Terminal Blocks screw type, 5.08 , 45 , 3 poles, CUI Blue, slotted screw, PCB mount
+F https://componentsearchengine.com/Datasheets/1/TB008A-508-03BE.pdf
+$ENDCMP
+#
+#End Doc Library
