@@ -1,0 +1,9 @@
+*-bak
+.spiceinit
+ boms/
+_*
+bom/*
+*-cache*
+manufactoring/
+digikey*
+sparkfun*
