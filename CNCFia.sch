@@ -29,17 +29,6 @@ Wire Wire Line
 Wire Wire Line
 	6150 1950 6000 1950
 $Comp
-L power:GND #PWR09
-U 1 1 5E2E2168
-P 5150 3350
-F 0 "#PWR09" H 5150 3100 50  0001 C CNN
-F 1 "GND" H 5155 3177 50  0000 C CNN
-F 2 "" H 5150 3350 50  0001 C CNN
-F 3 "" H 5150 3350 50  0001 C CNN
-	1    5150 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR07
 U 1 1 5E305BF9
 P 3450 5750
@@ -247,15 +236,15 @@ F9 "LV_6" I L 7550 2650 50
 F10 "LV_7" I L 7550 2750 50 
 F11 "LV_8" I L 7550 2850 50 
 F12 "LV_9" I L 7550 2950 50 
-F16 "HV_4" I R 8900 2450 50 
-F17 "HV_3" I R 8900 2350 50 
-F18 "HV_2" I R 8900 2250 50 
-F19 "HV_1" I R 8900 2150 50 
-F20 "HV_8" I R 8900 2850 50 
-F21 "HV_7" I R 8900 2750 50 
-F22 "HV_6" I R 8900 2650 50 
-F23 "HV_5" I R 8900 2550 50 
-F26 "HV_9" I R 8900 2950 50 
+F13 "HV_4" I R 8900 2450 50 
+F14 "HV_3" I R 8900 2350 50 
+F15 "HV_2" I R 8900 2250 50 
+F16 "HV_1" I R 8900 2150 50 
+F17 "HV_8" I R 8900 2850 50 
+F18 "HV_7" I R 8900 2750 50 
+F19 "HV_6" I R 8900 2650 50 
+F20 "HV_5" I R 8900 2550 50 
+F21 "HV_9" I R 8900 2950 50 
 $EndSheet
 $Comp
 L power:+3.3V #PWR011
@@ -307,12 +296,12 @@ F16 "SW_Extra" I L 2650 2750 50
 F17 "SW_Probe" I L 2650 2650 50 
 $EndSheet
 $Sheet
-S 7550 3250 1300 300 
+S 7300 3750 1300 300 
 U 5E63A080
 F0 "PWM to V converter" 50
 F1 "Pwm_Converter.sch" 50
-F2 "IN_Spn_PWM_0" I L 7550 3350 50 
-F3 "OUT_Spn_10V_0" I R 8850 3300 50 
+F2 "IN_Spn_PWM_0" I L 7300 3850 50 
+F3 "OUT_Spn_10V_0" I R 8600 3800 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_02x15_Odd_Even J9
@@ -575,64 +564,64 @@ $EndComp
 $Comp
 L SamacSys_Parts:TB008A-508-03BE J15
 U 1 1 5E3805B0
-P 9250 3800
-F 0 "J15" H 9878 3751 50  0000 L CNN
-F 1 "Relay_1" H 9878 3660 50  0000 L CNN
-F 2 "Kicad_extra_components:CUI_TBP01R2-508-03BE" H 9900 3900 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TB008A-508-03BE.pdf" H 9900 3800 50  0001 L CNN
-F 4 "Fixed Terminal Blocks screw type, 5.08 , 45 , 3 poles, CUI Blue, slotted screw, PCB mount" H 9900 3700 50  0001 L CNN "Description"
-F 5 "15.82" H 9900 3600 50  0001 L CNN "Height"
-F 6 "490-TB008A-508-03BE" H 9900 3500 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-TB008A-508-03BE" H 9900 3400 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI" H 9900 3300 50  0001 L CNN "Manufacturer_Name"
-F 9 "TB008A-508-03BE" H 9900 3200 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "102-6423-ND" H 9250 3800 50  0001 C CNN "Digi-Key_PN"
-F 11 "  	TBP01R2-508-03BE " H 9250 3800 50  0001 C CNN "MPN"
-F 12 "production" H 9250 3800 50  0001 C CNN "fit_field"
-F 13 "production" H 9250 3800 50  0001 C CNN "Config"
-	1    9250 3800
+P 9050 4650
+F 0 "J15" H 9678 4601 50  0000 L CNN
+F 1 "Relay_1" H 9678 4510 50  0000 L CNN
+F 2 "Kicad_extra_components:CUI_TBP01R2-508-03BE" H 9700 4750 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TB008A-508-03BE.pdf" H 9700 4650 50  0001 L CNN
+F 4 "Fixed Terminal Blocks screw type, 5.08 , 45 , 3 poles, CUI Blue, slotted screw, PCB mount" H 9700 4550 50  0001 L CNN "Description"
+F 5 "15.82" H 9700 4450 50  0001 L CNN "Height"
+F 6 "490-TB008A-508-03BE" H 9700 4350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-TB008A-508-03BE" H 9700 4250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI" H 9700 4150 50  0001 L CNN "Manufacturer_Name"
+F 9 "TB008A-508-03BE" H 9700 4050 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "102-6423-ND" H 9050 4650 50  0001 C CNN "Digi-Key_PN"
+F 11 "  	TBP01R2-508-03BE " H 9050 4650 50  0001 C CNN "MPN"
+F 12 "production" H 9050 4650 50  0001 C CNN "fit_field"
+F 13 "production" H 9050 4650 50  0001 C CNN "Config"
+	1    9050 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L SamacSys_Parts:TB008A-508-03BE J16
 U 1 1 5E380FB8
-P 9250 4150
-F 0 "J16" H 9878 4101 50  0000 L CNN
-F 1 "Relay_2" H 9878 4010 50  0000 L CNN
-F 2 "Kicad_extra_components:CUI_TBP01R2-508-03BE" H 9900 4250 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TB008A-508-03BE.pdf" H 9900 4150 50  0001 L CNN
-F 4 "Fixed Terminal Blocks screw type, 5.08 , 45 , 3 poles, CUI Blue, slotted screw, PCB mount" H 9900 4050 50  0001 L CNN "Description"
-F 5 "15.82" H 9900 3950 50  0001 L CNN "Height"
-F 6 "490-TB008A-508-03BE" H 9900 3850 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-TB008A-508-03BE" H 9900 3750 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI" H 9900 3650 50  0001 L CNN "Manufacturer_Name"
-F 9 "TB008A-508-03BE" H 9900 3550 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "102-6423-ND" H 9250 4150 50  0001 C CNN "Digi-Key_PN"
-F 11 "  	TBP01R2-508-03BE " H 9250 4150 50  0001 C CNN "MPN"
-F 12 "production" H 9250 4150 50  0001 C CNN "fit_field"
-F 13 "production" H 9250 4150 50  0001 C CNN "Config"
-	1    9250 4150
+P 9050 5000
+F 0 "J16" H 9678 4951 50  0000 L CNN
+F 1 "Relay_2" H 9678 4860 50  0000 L CNN
+F 2 "Kicad_extra_components:CUI_TBP01R2-508-03BE" H 9700 5100 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TB008A-508-03BE.pdf" H 9700 5000 50  0001 L CNN
+F 4 "Fixed Terminal Blocks screw type, 5.08 , 45 , 3 poles, CUI Blue, slotted screw, PCB mount" H 9700 4900 50  0001 L CNN "Description"
+F 5 "15.82" H 9700 4800 50  0001 L CNN "Height"
+F 6 "490-TB008A-508-03BE" H 9700 4700 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-TB008A-508-03BE" H 9700 4600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI" H 9700 4500 50  0001 L CNN "Manufacturer_Name"
+F 9 "TB008A-508-03BE" H 9700 4400 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "102-6423-ND" H 9050 5000 50  0001 C CNN "Digi-Key_PN"
+F 11 "  	TBP01R2-508-03BE " H 9050 5000 50  0001 C CNN "MPN"
+F 12 "production" H 9050 5000 50  0001 C CNN "fit_field"
+F 13 "production" H 9050 5000 50  0001 C CNN "Config"
+	1    9050 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L SamacSys_Parts:TB008A-508-03BE J17
 U 1 1 5E3816EA
-P 9250 4500
-F 0 "J17" H 9878 4451 50  0000 L CNN
-F 1 "Relay_3" H 9878 4360 50  0000 L CNN
-F 2 "Kicad_extra_components:CUI_TBP01R2-508-03BE" H 9900 4600 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TB008A-508-03BE.pdf" H 9900 4500 50  0001 L CNN
-F 4 "Fixed Terminal Blocks screw type, 5.08 , 45 , 3 poles, CUI Blue, slotted screw, PCB mount" H 9900 4400 50  0001 L CNN "Description"
-F 5 "15.82" H 9900 4300 50  0001 L CNN "Height"
-F 6 "490-TB008A-508-03BE" H 9900 4200 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-TB008A-508-03BE" H 9900 4100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI" H 9900 4000 50  0001 L CNN "Manufacturer_Name"
-F 9 "TB008A-508-03BE" H 9900 3900 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "102-6423-ND" H 9250 4500 50  0001 C CNN "Digi-Key_PN"
-F 11 "  	TBP01R2-508-03BE " H 9250 4500 50  0001 C CNN "MPN"
-F 12 "production" H 9250 4500 50  0001 C CNN "fit_field"
-F 13 "production" H 9250 4500 50  0001 C CNN "Config"
-	1    9250 4500
+P 9050 5350
+F 0 "J17" H 9678 5301 50  0000 L CNN
+F 1 "Relay_3" H 9678 5210 50  0000 L CNN
+F 2 "Kicad_extra_components:CUI_TBP01R2-508-03BE" H 9700 5450 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TB008A-508-03BE.pdf" H 9700 5350 50  0001 L CNN
+F 4 "Fixed Terminal Blocks screw type, 5.08 , 45 , 3 poles, CUI Blue, slotted screw, PCB mount" H 9700 5250 50  0001 L CNN "Description"
+F 5 "15.82" H 9700 5150 50  0001 L CNN "Height"
+F 6 "490-TB008A-508-03BE" H 9700 5050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-TB008A-508-03BE" H 9700 4950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI" H 9700 4850 50  0001 L CNN "Manufacturer_Name"
+F 9 "TB008A-508-03BE" H 9700 4750 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "102-6423-ND" H 9050 5350 50  0001 C CNN "Digi-Key_PN"
+F 11 "  	TBP01R2-508-03BE " H 9050 5350 50  0001 C CNN "MPN"
+F 12 "production" H 9050 5350 50  0001 C CNN "fit_field"
+F 13 "production" H 9050 5350 50  0001 C CNN "Config"
+	1    9050 5350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -774,22 +763,22 @@ F 5 "production" H 3250 7250 50  0001 C CNN "Config"
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 7550 3750 1300 1050
+S 7350 4600 1300 1050
 U 5E40BC56
 F0 "Relays" 50
 F1 "Relays.sch" 50
-F2 "Relay_In_3" I L 7550 4000 50 
-F3 "Relay_In_2" I L 7550 3900 50 
-F4 "Relay_In_1" I L 7550 3800 50 
-F5 "Relay_COM_1" I R 8850 3900 50 
-F6 "Relay_NO_1" I R 8850 4000 50 
-F7 "Relay_NC_1" I R 8850 3800 50 
-F8 "Relay_COM_2" I R 8850 4250 50 
-F9 "Relay_NO_2" I R 8850 4350 50 
-F10 "Relay_NC_2" I R 8850 4150 50 
-F11 "Relay_COM_3" I R 8850 4600 50 
-F12 "Relay_NO_3" I R 8850 4700 50 
-F13 "Relay_NC_3" I R 8850 4500 50 
+F2 "Relay_In_3" I L 7350 4850 50 
+F3 "Relay_In_2" I L 7350 4750 50 
+F4 "Relay_In_1" I L 7350 4650 50 
+F5 "Relay_COM_1" I R 8650 4750 50 
+F6 "Relay_NO_1" I R 8650 4850 50 
+F7 "Relay_NC_1" I R 8650 4650 50 
+F8 "Relay_COM_2" I R 8650 5100 50 
+F9 "Relay_NO_2" I R 8650 5200 50 
+F10 "Relay_NC_2" I R 8650 5000 50 
+F11 "Relay_COM_3" I R 8650 5450 50 
+F12 "Relay_NO_3" I R 8650 5550 50 
+F13 "Relay_NC_3" I R 8650 5350 50 
 $EndSheet
 Text GLabel 5400 2950 0    50   Input ~ 0
 Door
@@ -821,63 +810,61 @@ Wire Wire Line
 	2850 3450 2750 3450
 Connection ~ 2750 3450
 Wire Wire Line
-	9150 3400 9250 3400
+	8900 3900 9000 3900
 $Comp
 L SamacSys_Parts:TB008A-508-02BE J14
 U 1 1 5E91D3C1
-P 9250 3300
-F 0 "J14" H 9878 3296 50  0000 L CNN
-F 1 "Spin_10V" H 9878 3205 50  0000 L CNN
-F 2 "Kicad_extra_components:CUI_TBP01R2-508-02BE" H 9900 3400 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TB008A-508-02BE.pdf" H 9900 3300 50  0001 L CNN
-F 4 "Fixed Terminal Blocks screw type, 5.08 , 45 , 2 poles, CUI Blue, slotted screw, PCB mount" H 9900 3200 50  0001 L CNN "Description"
-F 5 "15.82" H 9900 3100 50  0001 L CNN "Height"
-F 6 "490-TB008A-508-02BE" H 9900 3000 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-TB008A-508-02BE" H 9900 2900 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI" H 9900 2800 50  0001 L CNN "Manufacturer_Name"
-F 9 "TB008A-508-02BE" H 9900 2700 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "102-6422-ND" H 9250 3300 50  0001 C CNN "Digi-Key_PN"
-F 11 "  	TBP01R2-508-02BE " H 9250 3300 50  0001 C CNN "MPN"
-F 12 "production" H 9250 3300 50  0001 C CNN "fit_field"
-F 13 "production" H 9250 3300 50  0001 C CNN "Config"
-	1    9250 3300
+P 9000 3800
+F 0 "J14" H 9628 3796 50  0000 L CNN
+F 1 "Spin_10V" H 9628 3705 50  0000 L CNN
+F 2 "Kicad_extra_components:CUI_TBP01R2-508-02BE" H 9650 3900 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TB008A-508-02BE.pdf" H 9650 3800 50  0001 L CNN
+F 4 "Fixed Terminal Blocks screw type, 5.08 , 45 , 2 poles, CUI Blue, slotted screw, PCB mount" H 9650 3700 50  0001 L CNN "Description"
+F 5 "15.82" H 9650 3600 50  0001 L CNN "Height"
+F 6 "490-TB008A-508-02BE" H 9650 3500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-TB008A-508-02BE" H 9650 3400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI" H 9650 3300 50  0001 L CNN "Manufacturer_Name"
+F 9 "TB008A-508-02BE" H 9650 3200 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "102-6422-ND" H 9000 3800 50  0001 C CNN "Digi-Key_PN"
+F 11 "  	TBP01R2-508-02BE " H 9000 3800 50  0001 C CNN "MPN"
+F 12 "production" H 9000 3800 50  0001 C CNN "fit_field"
+F 13 "production" H 9000 3800 50  0001 C CNN "Config"
+	1    9000 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 3400 9150 3450
+	8900 3900 8900 3950
 $Comp
 L power:GND #PWR013
 U 1 1 5E35FECC
-P 9150 3450
-F 0 "#PWR013" H 9150 3200 50  0001 C CNN
-F 1 "GND" H 9155 3277 50  0000 C CNN
-F 2 "" H 9150 3450 50  0001 C CNN
-F 3 "" H 9150 3450 50  0001 C CNN
-	1    9150 3450
+P 8900 3950
+F 0 "#PWR013" H 8900 3700 50  0001 C CNN
+F 1 "GND" H 8905 3777 50  0000 C CNN
+F 2 "" H 8900 3950 50  0001 C CNN
+F 3 "" H 8900 3950 50  0001 C CNN
+	1    8900 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9250 3300 8850 3300
+	9000 3800 8600 3800
 Wire Wire Line
-	9250 3800 8850 3800
+	9050 4650 8650 4650
 Wire Wire Line
-	8850 3900 9250 3900
+	8650 4750 9050 4750
 Wire Wire Line
-	8850 4000 9250 4000
+	8650 4850 9050 4850
 Wire Wire Line
-	8850 4150 9250 4150
+	8650 5000 9050 5000
 Wire Wire Line
-	8850 4250 9250 4250
+	8650 5100 9050 5100
 Wire Wire Line
-	8850 4350 9250 4350
+	8650 5200 9050 5200
 Wire Wire Line
-	8850 4500 9250 4500
+	8650 5350 9050 5350
 Wire Wire Line
-	8850 4600 9250 4600
+	8650 5450 9050 5450
 Wire Wire Line
-	8850 4700 9250 4700
-Wire Wire Line
-	5150 3350 5400 3350
+	8650 5550 9050 5550
 $Comp
 L power:GND #PWR0101
 U 1 1 5EC35D90
@@ -963,15 +950,15 @@ Text GLabel 5900 2850 2    50   Input ~ 0
 LV_8
 Text GLabel 5900 2950 2    50   Input ~ 0
 LV_9
-Text GLabel 7550 3350 0    50   Input ~ 0
+Text GLabel 7300 3850 0    50   Input ~ 0
 SPIN_PWM
 Text GLabel 5900 3050 2    50   Input ~ 0
 SPIN_PWM
-Text GLabel 7550 3800 0    50   Input ~ 0
+Text GLabel 7350 4650 0    50   Input ~ 0
 IN_Relay_1
-Text GLabel 7550 3900 0    50   Input ~ 0
+Text GLabel 7350 4750 0    50   Input ~ 0
 IN_Relay_2
-Text GLabel 7550 4000 0    50   Input ~ 0
+Text GLabel 7350 4850 0    50   Input ~ 0
 IN_Relay_3
 Text GLabel 5900 3150 2    50   Input ~ 0
 IN_Relay_1
@@ -999,4 +986,17 @@ Text Notes 1350 4400 0    50   ~ 0
 External Power Connectors
 Text GLabel 5900 3250 2    50   Input ~ 0
 IN_Relay_2
+Wire Wire Line
+	5150 3350 5400 3350
+$Comp
+L power:GND #PWR09
+U 1 1 5E2E2168
+P 5150 3350
+F 0 "#PWR09" H 5150 3100 50  0001 C CNN
+F 1 "GND" H 5155 3177 50  0000 C CNN
+F 2 "" H 5150 3350 50  0001 C CNN
+F 3 "" H 5150 3350 50  0001 C CNN
+	1    5150 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
