@@ -7,4 +7,5 @@
   (lib (name dk_Transistors-FETs-MOSFETs-Single)(type Legacy)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-symbols/dk_Transistors-FETs-MOSFETs-Single.lib)(options "")(descr ""))
   (lib (name TB008A-508-04BE)(type Legacy)(uri ${KIPRJMOD}/Custom/Kicad_extra_components/TB008A-508-04BE.lib)(options "")(descr ""))
   (lib (name SamacSys_Parts)(type Legacy)(uri ${KIPRJMOD}/Custom/LibraryLoader/SamacSys_Parts.lib)(options "")(descr ""))
+  (lib (name arduino)(type Legacy)(uri ${KIPRJMOD}/Custom/arduino-kicad-library-master/arduino.lib)(options "")(descr ""))
 )

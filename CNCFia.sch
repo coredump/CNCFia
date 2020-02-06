@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 5
 Title "CNC Generic Daughter Card"
 Date "2020-01-26"
-Rev "1"
+Rev "10"
 Comp "c6p"
 Comment1 ""
 Comment2 ""
@@ -86,17 +86,6 @@ F 3 "" H 1500 5500 50  0001 C CNN
 	1    1500 5500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5E3933B0
-P 1800 5500
-F 0 "#PWR02" H 1800 5250 50  0001 C CNN
-F 1 "GND" H 1805 5327 50  0000 C CNN
-F 2 "" H 1800 5500 50  0001 C CNN
-F 3 "" H 1800 5500 50  0001 C CNN
-	1    1800 5500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 1950 6350 2050
 Wire Wire Line
@@ -138,8 +127,6 @@ Wire Wire Line
 	1500 7250 1500 7200
 Text GLabel 6150 1950 1    50   Input ~ 0
 MCU_5V
-Wire Wire Line
-	2400 5500 2400 5650
 $Comp
 L power:PWR_FLAG #FLG06
 U 1 1 5E461A6B
@@ -179,24 +166,6 @@ Wire Wire Line
 	1700 7250 1500 7250
 Wire Wire Line
 	1950 7000 1950 7100
-$Comp
-L power:PWR_FLAG #FLG02
-U 1 1 5E46D8BB
-P 2650 5650
-F 0 "#FLG02" H 2650 5725 50  0001 C CNN
-F 1 "PWR_FLAG" H 2650 5823 50  0000 C CNN
-F 2 "" H 2650 5650 50  0001 C CNN
-F 3 "~" H 2650 5650 50  0001 C CNN
-	1    2650 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 5650 2400 5650
-Connection ~ 2400 5650
-Wire Wire Line
-	2400 5650 2400 5700
-Wire Wire Line
-	1700 5500 1800 5500
 Wire Wire Line
 	1600 5500 1500 5500
 $Comp
@@ -318,20 +287,6 @@ F 6 "production" H 5600 2650 50  0001 C CNN "Config"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG03
-U 1 1 5E4CD356
-P 3800 5750
-F 0 "#FLG03" H 3800 5825 50  0001 C CNN
-F 1 "PWR_FLAG" H 3800 5923 50  0000 C CNN
-F 2 "" H 3800 5750 50  0001 C CNN
-F 3 "~" H 3800 5750 50  0001 C CNN
-	1    3800 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3800 5750 3450 5750
-Connection ~ 3450 5750
-$Comp
 L power:PWR_FLAG #FLG07
 U 1 1 5E4D45DE
 P 7900 1700
@@ -359,28 +314,6 @@ $EndComp
 Wire Wire Line
 	9450 1950 9150 1950
 Connection ~ 9150 1950
-$Comp
-L SamacSys_Parts:TB008A-508-02BE J1
-U 1 1 5E532367
-P 1600 5500
-F 0 "J1" H 2228 5496 50  0000 L CNN
-F 1 "GND" H 2228 5405 50  0000 L CNN
-F 2 "Kicad_extra_components:CUI_TBP01R2-508-02BE" H 2250 5600 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TB008A-508-02BE.pdf" H 2250 5500 50  0001 L CNN
-F 4 "Fixed Terminal Blocks screw type, 5.08 , 45 , 2 poles, CUI Blue, slotted screw, PCB mount" H 2250 5400 50  0001 L CNN "Description"
-F 5 "15.82" H 2250 5300 50  0001 L CNN "Height"
-F 6 "490-TB008A-508-02BE" H 2250 5200 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-TB008A-508-02BE" H 2250 5100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI" H 2250 5000 50  0001 L CNN "Manufacturer_Name"
-F 9 "TB008A-508-02BE" H 2250 4900 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "102-6422-ND" H 1600 5500 50  0001 C CNN "Digi-Key_PN"
-F 11 "  	TBP01R2-508-02BE " H 1600 5500 50  0001 C CNN "MPN"
-F 12 "TBP01R2-508-02BE " H 1600 5500 50  0001 C CNN "Manufacturer"
-F 13 "production" H 1600 5500 50  0001 C CNN "fit_field"
-F 14 "production" H 1600 5500 50  0001 C CNN "Config"
-	1    1600 5500
-	0    -1   -1   0   
-$EndComp
 $Comp
 L SamacSys_Parts:TB008A-508-02BE J2
 U 1 1 5E53FC1B
@@ -624,46 +557,12 @@ F 13 "production" H 9050 5350 50  0001 C CNN "Config"
 	1    9050 5350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 5E3C8F16
-P 2100 5650
-F 0 "#FLG01" H 2100 5725 50  0001 C CNN
-F 1 "PWR_FLAG" H 2100 5823 50  0000 C CNN
-F 2 "" H 2100 5650 50  0001 C CNN
-F 3 "~" H 2100 5650 50  0001 C CNN
-	1    2100 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 5650 2250 5650
-Connection ~ 2250 5650
 Text GLabel 4500 5700 3    50   Input ~ 0
 OPTO_5V
 Wire Wire Line
 	4400 5500 4400 5550
 Wire Wire Line
 	4400 5550 4350 5550
-Wire Wire Line
-	4350 5550 4350 5650
-Wire Wire Line
-	4500 5500 4500 5650
-$Comp
-L power:PWR_FLAG #FLG05
-U 1 1 5E87F031
-P 4750 5650
-F 0 "#FLG05" H 4750 5725 50  0001 C CNN
-F 1 "PWR_FLAG" H 4750 5823 50  0000 C CNN
-F 2 "" H 4750 5650 50  0001 C CNN
-F 3 "~" H 4750 5650 50  0001 C CNN
-	1    4750 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 5650 4500 5650
-Connection ~ 4500 5650
-Wire Wire Line
-	4500 5650 4500 5700
 $Comp
 L SamacSys_Parts:TB008A-508-02BE J8
 U 1 1 5E87F045
@@ -685,24 +584,8 @@ F 13 "production" H 4400 5500 50  0001 C CNN "Config"
 	1    4400 5500
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG04
-U 1 1 5E87F04F
-P 4200 5650
-F 0 "#FLG04" H 4200 5725 50  0001 C CNN
-F 1 "PWR_FLAG" H 4200 5823 50  0000 C CNN
-F 2 "" H 4200 5650 50  0001 C CNN
-F 3 "~" H 4200 5650 50  0001 C CNN
-	1    4200 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 5650 4350 5650
 Text GLabel 4350 5700 3    50   Input ~ 0
 OPTO_GND
-Wire Wire Line
-	4350 5700 4350 5650
-Connection ~ 4350 5650
 Text GLabel 5300 7200 1    50   Input ~ 0
 EXT_5V
 Text GLabel 4350 7200 1    50   Input ~ 0
@@ -915,41 +798,11 @@ Probe
 Text GLabel 3750 2750 2    50   Input ~ 0
 Extra_SW
 Text GLabel 7550 2150 0    50   Input ~ 0
-LV_1
+X_Enbl
 Text GLabel 7550 2250 0    50   Input ~ 0
-LV_2
+X_Dir
 Text GLabel 7550 2350 0    50   Input ~ 0
-LV_3
-Text GLabel 7550 2450 0    50   Input ~ 0
-LV_4
-Text GLabel 7550 2550 0    50   Input ~ 0
-LV_5
-Text GLabel 7550 2650 0    50   Input ~ 0
-LV_6
-Text GLabel 7550 2750 0    50   Input ~ 0
-LV_7
-Text GLabel 7550 2850 0    50   Input ~ 0
-LV_8
-Text GLabel 7550 2950 0    50   Input ~ 0
-LV_9
-Text GLabel 5900 2150 2    50   Input ~ 0
-LV_1
-Text GLabel 5900 2250 2    50   Input ~ 0
-LV_2
-Text GLabel 5900 2350 2    50   Input ~ 0
-LV_3
-Text GLabel 5900 2450 2    50   Input ~ 0
-LV_4
-Text GLabel 5900 2550 2    50   Input ~ 0
-LV_5
-Text GLabel 5900 2650 2    50   Input ~ 0
-LV_6
-Text GLabel 5900 2750 2    50   Input ~ 0
-LV_7
-Text GLabel 5900 2850 2    50   Input ~ 0
-LV_8
-Text GLabel 5900 2950 2    50   Input ~ 0
-LV_9
+X_Step
 Text GLabel 7300 3850 0    50   Input ~ 0
 SPIN_PWM
 Text GLabel 5900 3050 2    50   Input ~ 0
@@ -999,4 +852,79 @@ F 3 "" H 5150 3350 50  0001 C CNN
 	1    5150 3350
 	1    0    0    -1  
 $EndComp
+Text GLabel 7550 2450 0    50   Input ~ 0
+Y_Enbl
+Text GLabel 7550 2550 0    50   Input ~ 0
+Y_Dir
+Text GLabel 7550 2650 0    50   Input ~ 0
+Y_Step
+Text GLabel 7550 2750 0    50   Input ~ 0
+Z_Enbl
+Text GLabel 7550 2850 0    50   Input ~ 0
+Z_Dir
+Text GLabel 7550 2950 0    50   Input ~ 0
+Z_Step
+Text GLabel 5900 2150 2    50   Input ~ 0
+X_Enbl
+Text GLabel 5900 2250 2    50   Input ~ 0
+X_Dir
+Text GLabel 5900 2350 2    50   Input ~ 0
+X_Step
+Text GLabel 5900 2450 2    50   Input ~ 0
+Y_Enbl
+Text GLabel 5900 2550 2    50   Input ~ 0
+Y_Dir
+Text GLabel 5900 2650 2    50   Input ~ 0
+Y_Step
+Text GLabel 5900 2750 2    50   Input ~ 0
+Z_Enbl
+Text GLabel 5900 2850 2    50   Input ~ 0
+Z_Dir
+Text GLabel 5900 2950 2    50   Input ~ 0
+Z_Step
+$Comp
+L SamacSys_Parts:TB008A-508-02BE J1
+U 1 1 5E532367
+P 1600 5500
+F 0 "J1" H 2228 5496 50  0000 L CNN
+F 1 "GND" H 2228 5405 50  0000 L CNN
+F 2 "Kicad_extra_components:CUI_TBP01R2-508-02BE" H 2250 5600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TB008A-508-02BE.pdf" H 2250 5500 50  0001 L CNN
+F 4 "Fixed Terminal Blocks screw type, 5.08 , 45 , 2 poles, CUI Blue, slotted screw, PCB mount" H 2250 5400 50  0001 L CNN "Description"
+F 5 "15.82" H 2250 5300 50  0001 L CNN "Height"
+F 6 "490-TB008A-508-02BE" H 2250 5200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-TB008A-508-02BE" H 2250 5100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI" H 2250 5000 50  0001 L CNN "Manufacturer_Name"
+F 9 "TB008A-508-02BE" H 2250 4900 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "102-6422-ND" H 1600 5500 50  0001 C CNN "Digi-Key_PN"
+F 11 "  	TBP01R2-508-02BE " H 1600 5500 50  0001 C CNN "MPN"
+F 12 "TBP01R2-508-02BE " H 1600 5500 50  0001 C CNN "Manufacturer"
+F 13 "production" H 1600 5500 50  0001 C CNN "fit_field"
+F 14 "production" H 1600 5500 50  0001 C CNN "Config"
+	1    1600 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E3F3104
+P 1800 5650
+AR Path="/5E2EF045/5E3F3104" Ref="#PWR?"  Part="1" 
+AR Path="/5E3F3104" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 1800 5500 50  0001 C CNN
+F 1 "+5V" H 1815 5823 50  0000 C CNN
+F 2 "" H 1800 5650 50  0001 C CNN
+F 3 "" H 1800 5650 50  0001 C CNN
+	1    1800 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5650 1700 5500
+Wire Wire Line
+	1800 5650 1700 5650
+Wire Wire Line
+	2400 5500 2400 5700
+Wire Wire Line
+	4350 5550 4350 5700
+Wire Wire Line
+	4500 5500 4500 5700
 $EndSCHEMATC
