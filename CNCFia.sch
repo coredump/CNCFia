@@ -27,14 +27,14 @@ Connection ~ 6150 4850
 NoConn ~ 4850 4850
 NoConn ~ 4850 4950
 NoConn ~ 4850 5050
-NoConn ~ 5400 3550
-NoConn ~ 5400 3650
-NoConn ~ 5400 3750
-NoConn ~ 5400 3850
-NoConn ~ 5900 3850
-NoConn ~ 5900 3750
-NoConn ~ 5900 3650
-NoConn ~ 5900 3550
+NoConn ~ 5400 3400
+NoConn ~ 5400 3500
+NoConn ~ 5400 3600
+NoConn ~ 5400 3700
+NoConn ~ 5900 3400
+NoConn ~ 5900 3500
+NoConn ~ 5900 3600
+NoConn ~ 5900 3700
 Wire Wire Line
 	900  7100 900  7050
 Wire Wire Line
@@ -74,7 +74,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 4950 5750 4950
 Wire Wire Line
-	6350 1950 6350 2050
+	6350 1800 6350 1900
 Wire Wire Line
 	7500 1950 7600 1950
 Wire Wire Line
@@ -88,9 +88,9 @@ Wire Wire Line
 Wire Wire Line
 	3750 5400 3750 5550
 Wire Wire Line
-	5250 1950 5250 1800
+	5250 1800 5250 1650
 Wire Wire Line
-	5400 1950 5250 1950
+	5400 1800 5250 1800
 Wire Wire Line
 	6150 4700 6150 4850
 Wire Wire Line
@@ -122,7 +122,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 4700 5750 4950
 Wire Wire Line
-	5900 1950 6150 1950
+	5900 1800 6150 1800
 Wire Wire Line
 	7500 1700 7500 1950
 Wire Wire Line
@@ -196,9 +196,9 @@ Wire Wire Line
 Wire Wire Line
 	9300 5700 8900 5700
 Wire Wire Line
-	4800 1800 5250 1800
+	4800 1650 5250 1650
 Wire Wire Line
-	6350 2050 5900 2050
+	6350 1900 5900 1900
 Wire Wire Line
 	1850 3650 2350 3650
 Wire Wire Line
@@ -271,65 +271,65 @@ Text GLabel 4200 6850 1    50   Input ~ 0
 OPTO_5V
 Text GLabel 4700 7050 1    50   Input ~ 0
 EXT_5V
-Text GLabel 5400 2050 0    50   Input ~ 0
+Text GLabel 5400 1900 0    50   Input ~ 0
 LIM_XMin
-Text GLabel 5400 2150 0    50   Input ~ 0
+Text GLabel 5400 2000 0    50   Input ~ 0
 LIM_XMax
-Text GLabel 5400 2250 0    50   Input ~ 0
+Text GLabel 5400 2100 0    50   Input ~ 0
 LIM_YMin
-Text GLabel 5400 2350 0    50   Input ~ 0
+Text GLabel 5400 2200 0    50   Input ~ 0
 LIM_YMax
-Text GLabel 5400 2450 0    50   Input ~ 0
+Text GLabel 5400 2300 0    50   Input ~ 0
 LIM_ZMin
-Text GLabel 5400 2550 0    50   Input ~ 0
+Text GLabel 5400 2400 0    50   Input ~ 0
 LIM_ZMax
-Text GLabel 5400 2650 0    50   Input ~ 0
+Text GLabel 5400 2500 0    50   Input ~ 0
 Probe
-Text GLabel 5400 2750 0    50   Input ~ 0
+Text GLabel 5400 2600 0    50   Input ~ 0
 Extra_SW
-Text GLabel 5400 2850 0    50   Input ~ 0
+Text GLabel 5400 2700 0    50   Input ~ 0
 Reset
-Text GLabel 5400 2950 0    50   Input ~ 0
+Text GLabel 5400 2800 0    50   Input ~ 0
 Door
-Text GLabel 5400 3050 0    50   Input ~ 0
+Text GLabel 5400 2900 0    50   Input ~ 0
 E_Stop
-Text GLabel 5400 3150 0    50   Input ~ 0
+Text GLabel 5400 3000 0    50   Input ~ 0
 Cycle_Start
-Text GLabel 5400 3250 0    50   Input ~ 0
+Text GLabel 5400 3100 0    50   Input ~ 0
 Feed_Hold
-Text GLabel 5400 3350 0    50   Output ~ 0
+Text GLabel 5400 3200 0    50   Output ~ 0
 E_SDA
-Text GLabel 5400 3450 0    50   Output ~ 0
+Text GLabel 5400 3300 0    50   Output ~ 0
 E_SCL
-Text GLabel 5900 2150 2    50   Output ~ 0
+Text GLabel 5900 2000 2    50   Output ~ 0
 X_Enbl
-Text GLabel 5900 2250 2    50   Output ~ 0
+Text GLabel 5900 2100 2    50   Output ~ 0
 X_Dir
-Text GLabel 5900 2350 2    50   Output ~ 0
+Text GLabel 5900 2200 2    50   Output ~ 0
 X_Step
-Text GLabel 5900 2450 2    50   Output ~ 0
+Text GLabel 5900 2300 2    50   Output ~ 0
 Y_Enbl
-Text GLabel 5900 2550 2    50   Output ~ 0
+Text GLabel 5900 2400 2    50   Output ~ 0
 Y_Dir
-Text GLabel 5900 2650 2    50   Output ~ 0
+Text GLabel 5900 2500 2    50   Output ~ 0
 Y_Step
-Text GLabel 5900 2750 2    50   Output ~ 0
+Text GLabel 5900 2600 2    50   Output ~ 0
 Z_Enbl
-Text GLabel 5900 2850 2    50   Output ~ 0
+Text GLabel 5900 2700 2    50   Output ~ 0
 Z_Dir
-Text GLabel 5900 2950 2    50   Output ~ 0
+Text GLabel 5900 2800 2    50   Output ~ 0
 Z_Step
-Text GLabel 5900 3050 2    50   Output ~ 0
+Text GLabel 5900 2900 2    50   Output ~ 0
 Spin_PWM
-Text GLabel 5900 3150 2    50   Output ~ 0
+Text GLabel 5900 3000 2    50   Output ~ 0
 Spin_Enbl
-Text GLabel 5900 3250 2    50   Output ~ 0
+Text GLabel 5900 3100 2    50   Output ~ 0
 Spin_Dir
-Text GLabel 5900 3350 2    50   Output ~ 0
+Text GLabel 5900 3200 2    50   Output ~ 0
 Mist
-Text GLabel 5900 3450 2    50   Output ~ 0
+Text GLabel 5900 3300 2    50   Output ~ 0
 Flood
-Text GLabel 6150 1950 1    50   Output ~ 0
+Text GLabel 6150 1800 1    50   Output ~ 0
 MCU_5V
 Text GLabel 6350 4850 2    50   Input ~ 0
 E_SDA
@@ -413,13 +413,13 @@ F 3 "" H 5250 4200 50  0001 C CNN
 $EndComp
 $Comp
 L power:+3.3V #PWR010
-U 1 1 5E2DE7F5
-P 6350 1950
-F 0 "#PWR010" H 6350 1800 50  0001 C CNN
-F 1 "+3.3V" H 6365 2123 50  0000 C CNN
-F 2 "" H 6350 1950 50  0001 C CNN
-F 3 "" H 6350 1950 50  0001 C CNN
-	1    6350 1950
+U 1 1 5E3E2E27
+P 6350 1800
+F 0 "#PWR010" H 6350 1650 50  0001 C CNN
+F 1 "+3.3V" H 6365 1973 50  0000 C CNN
+F 2 "" H 6350 1800 50  0001 C CNN
+F 3 "" H 6350 1800 50  0001 C CNN
+	1    6350 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -504,12 +504,12 @@ $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5EC35D90
-P 4800 1800
-F 0 "#PWR0101" H 4800 1550 50  0001 C CNN
-F 1 "GND" H 4805 1627 50  0000 C CNN
-F 2 "" H 4800 1800 50  0001 C CNN
-F 3 "" H 4800 1800 50  0001 C CNN
-	1    4800 1800
+P 4800 1650
+F 0 "#PWR0101" H 4800 1400 50  0001 C CNN
+F 1 "GND" H 4805 1477 50  0000 C CNN
+F 2 "" H 4800 1650 50  0001 C CNN
+F 3 "" H 4800 1650 50  0001 C CNN
+	1    4800 1650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -936,16 +936,16 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even J9
 U 1 1 5E2D3FC9
-P 5600 2850
-F 0 "J9" H 5650 3700 50  0000 C CNN
-F 1 "Signal Input" H 5650 3900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 5600 2850 50  0001 C CNN
-F 3 "~" H 5600 2850 50  0001 C CNN
-F 4 "ED10529-ND" H 5600 2850 50  0001 C CNN "Digi-Key_PN"
-F 5 "production" H 5600 2850 50  0001 C CNN "fit_field"
-F 6 "production" H 5600 2850 50  0001 C CNN "Config"
-F 7 "302-S401" H 5600 2850 50  0001 C CNN "MPN"
-	1    5600 2850
+P 5600 2700
+F 0 "J9" H 5650 3550 50  0000 C CNN
+F 1 "Signal Input" H 5650 3750 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 5600 2700 50  0001 C CNN
+F 3 "~" H 5600 2700 50  0001 C CNN
+F 4 "ED10529-ND" H 5600 2700 50  0001 C CNN "Digi-Key_PN"
+F 5 "production" H 5600 2700 50  0001 C CNN "fit_field"
+F 6 "production" H 5600 2700 50  0001 C CNN "Config"
+F 7 "302-S401" H 5600 2700 50  0001 C CNN "MPN"
+	1    5600 2700
 	1    0    0    -1  
 $EndComp
 $Sheet
