@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
-Title ""
-Date "2020-01-26"
-Rev "1"
-Comp ""
-Comment1 ""
+Title "Level shifters"
+Date "2020-02-07"
+Rev "b4"
+Comp "c6p.dev"
+Comment1 "Takes care of converting 3.3v signal to 5v used by drivers"
 Comment2 ""
 Comment3 ""
 Comment4 ""

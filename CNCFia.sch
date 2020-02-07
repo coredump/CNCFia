@@ -5,9 +5,9 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 5
 Title "CNC Generic Daughter Card"
-Date "2020-01-26"
-Rev "10"
-Comp "c6p"
+Date "2020-02-07"
+Rev "b4"
+Comp "c6p.dev"
 Comment1 ""
 Comment2 ""
 Comment3 ""
