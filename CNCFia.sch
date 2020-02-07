@@ -18,15 +18,15 @@ Comment7 ""
 Comment8 ""
 Comment9 ""
 $EndDescr
-Connection ~ 2250 3950
-Connection ~ 5250 4400
-Connection ~ 5250 5300
-Connection ~ 5750 4400
-Connection ~ 5750 4950
-Connection ~ 6150 4850
-NoConn ~ 4850 4850
-NoConn ~ 4850 4950
-NoConn ~ 4850 5050
+Connection ~ 2450 3200
+Connection ~ 5400 4750
+Connection ~ 5400 5650
+Connection ~ 5900 4750
+Connection ~ 5900 5300
+Connection ~ 6300 5200
+NoConn ~ 5000 5200
+NoConn ~ 5000 5300
+NoConn ~ 5000 5400
 NoConn ~ 5400 3400
 NoConn ~ 5400 3500
 NoConn ~ 5400 3600
@@ -52,7 +52,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 7050 4700 7100
 Wire Wire Line
-	5250 5300 5250 5250
+	5400 5650 5400 5600
 Wire Wire Line
 	9150 1900 9150 1950
 Wire Wire Line
@@ -66,13 +66,13 @@ Wire Wire Line
 Wire Wire Line
 	1850 5400 1850 5500
 Wire Wire Line
-	2350 3950 2250 3950
+	2450 3200 2450 3300
 Wire Wire Line
 	4200 6850 4200 6950
 Wire Wire Line
-	5250 5400 5250 5300
+	5400 5750 5400 5650
 Wire Wire Line
-	5650 4950 5750 4950
+	5800 5300 5900 5300
 Wire Wire Line
 	6350 1800 6350 1900
 Wire Wire Line
@@ -92,7 +92,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 1800 5250 1800
 Wire Wire Line
-	6150 4700 6150 4850
+	6300 5050 6300 5200
 Wire Wire Line
 	1100 7100 900  7100
 Wire Wire Line
@@ -104,9 +104,9 @@ Wire Wire Line
 Wire Wire Line
 	3950 7100 3750 7100
 Wire Wire Line
-	5250 4200 5250 4400
+	5400 4550 5400 4750
 Wire Wire Line
-	6150 4850 6350 4850
+	6300 5200 6500 5200
 Wire Wire Line
 	1600 7100 1850 7100
 Wire Wire Line
@@ -116,35 +116,35 @@ Wire Wire Line
 Wire Wire Line
 	4450 7100 4700 7100
 Wire Wire Line
-	5250 4400 5250 4650
+	5400 4750 5400 5000
 Wire Wire Line
-	5650 5050 5650 5300
-Wire Wire Line
-	5750 4700 5750 4950
+	5800 5400 5800 5650
 Wire Wire Line
 	5900 1800 6150 1800
+Wire Wire Line
+	5900 5050 5900 5300
 Wire Wire Line
 	7500 1700 7500 1950
 Wire Wire Line
 	9150 1950 8900 1950
 Wire Wire Line
-	1850 2550 2150 2550
+	1950 1800 2250 1800
 Wire Wire Line
-	1850 2750 2150 2750
+	1950 2000 2250 2000
 Wire Wire Line
-	1850 2950 2150 2950
+	1950 2200 2250 2200
 Wire Wire Line
-	1850 3050 2150 3050
+	1950 2300 2250 2300
 Wire Wire Line
-	1850 3250 2150 3250
+	1950 2500 2250 2500
 Wire Wire Line
-	2150 2650 1850 2650
+	2250 1900 1950 1900
 Wire Wire Line
-	2150 2850 1850 2850
+	2250 2100 1950 2100
 Wire Wire Line
-	2150 3150 1850 3150
+	2250 2400 1950 2400
 Wire Wire Line
-	2350 3650 2350 3950
+	2450 2900 2450 3200
 Wire Wire Line
 	9250 2150 8900 2150
 Wire Wire Line
@@ -164,11 +164,9 @@ Wire Wire Line
 Wire Wire Line
 	9250 2950 8900 2950
 Wire Wire Line
-	2250 3950 1850 3950
+	5800 5650 5400 5650
 Wire Wire Line
-	5650 5300 5250 5300
-Wire Wire Line
-	5750 4400 6150 4400
+	5900 4750 6300 4750
 Wire Wire Line
 	8900 4750 9300 4750
 Wire Wire Line
@@ -200,13 +198,15 @@ Wire Wire Line
 Wire Wire Line
 	6350 1900 5900 1900
 Wire Wire Line
-	1850 3650 2350 3650
+	1950 2900 2450 2900
 Wire Wire Line
-	5250 4400 5750 4400
+	1950 3200 2450 3200
 Wire Wire Line
-	5650 4850 6150 4850
+	5400 4750 5900 4750
 Wire Wire Line
-	5750 4950 6350 4950
+	5800 5200 6300 5200
+Wire Wire Line
+	5900 5300 6500 5300
 Wire Notes Line
 	750  6400 750  7350
 Wire Notes Line
@@ -215,6 +215,14 @@ Wire Notes Line
 	750  4300 750  6050
 Wire Notes Line
 	4400 6050 4400 4300
+Wire Notes Line
+	4900 4300 4900 6050
+Wire Notes Line
+	6900 6050 6900 4300
+Wire Notes Line
+	4900 4300 6900 4300
+Wire Notes Line
+	4900 6050 6900 6050
 Wire Notes Line
 	750  6050 4400 6050
 Wire Notes Line
@@ -227,39 +235,41 @@ Text Notes 750  4250 0    50   ~ 0
 External Power Connectors
 Text Notes 750  6350 0    50   ~ 0
 Voltage Selection Jumpers
+Text Notes 4900 4250 0    50   ~ 0
+EEPROM
 Text GLabel 900  7050 1    50   Input ~ 0
 MCU_5V
-Text GLabel 1850 3350 2    50   Output ~ 0
-Door
-Text GLabel 1850 3450 2    50   Output ~ 0
-Reset
-Text GLabel 1850 3550 2    50   Output ~ 0
-Feed_Hold
-Text GLabel 1850 3750 2    50   Output ~ 0
-Cycle_Start
-Text GLabel 1850 3850 2    50   Output ~ 0
-E_Stop
 Text GLabel 1850 7050 1    50   Input ~ 0
 EXT_5V
+Text GLabel 1950 2600 2    50   Output ~ 0
+Door
+Text GLabel 1950 2700 2    50   Output ~ 0
+Reset
+Text GLabel 1950 2800 2    50   Output ~ 0
+Feed_Hold
+Text GLabel 1950 3000 2    50   Output ~ 0
+Cycle_Start
+Text GLabel 1950 3100 2    50   Output ~ 0
+E_Stop
 Text GLabel 2000 5550 3    50   Output ~ 0
 EXT_5V
 Text GLabel 3000 7100 2    50   Input ~ 0
 OPTO_GND
-Text GLabel 3250 2550 2    50   Output ~ 0
+Text GLabel 3350 1800 2    50   Output ~ 0
 LIM_XMin
-Text GLabel 3250 2650 2    50   Output ~ 0
+Text GLabel 3350 1900 2    50   Output ~ 0
 LIM_XMax
-Text GLabel 3250 2750 2    50   Output ~ 0
+Text GLabel 3350 2000 2    50   Output ~ 0
 LIM_YMin
-Text GLabel 3250 2850 2    50   Output ~ 0
+Text GLabel 3350 2100 2    50   Output ~ 0
 LIM_YMax
-Text GLabel 3250 2950 2    50   Output ~ 0
+Text GLabel 3350 2200 2    50   Output ~ 0
 LIM_ZMin
-Text GLabel 3250 3050 2    50   Output ~ 0
+Text GLabel 3350 2300 2    50   Output ~ 0
 LIM_ZMax
-Text GLabel 3250 3150 2    50   Output ~ 0
+Text GLabel 3350 2400 2    50   Output ~ 0
 Probe
-Text GLabel 3250 3250 2    50   Output ~ 0
+Text GLabel 3350 2500 2    50   Output ~ 0
 Extra_SW
 Text GLabel 3750 5550 3    50   Output ~ 0
 OPTO_GND
@@ -331,9 +341,9 @@ Text GLabel 5900 3300 2    50   Output ~ 0
 Flood
 Text GLabel 6150 1800 1    50   Output ~ 0
 MCU_5V
-Text GLabel 6350 4850 2    50   Input ~ 0
+Text GLabel 6500 5200 2    50   Input ~ 0
 E_SDA
-Text GLabel 6350 4950 2    50   Input ~ 0
+Text GLabel 6500 5300 2    50   Input ~ 0
 E_SCL
 Text GLabel 7600 2150 0    50   Input ~ 0
 X_Enbl
@@ -403,12 +413,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR019
 U 1 1 5E563C70
-P 5250 4200
-F 0 "#PWR019" H 5250 4050 50  0001 C CNN
-F 1 "+3.3V" H 5265 4373 50  0000 C CNN
-F 2 "" H 5250 4200 50  0001 C CNN
-F 3 "" H 5250 4200 50  0001 C CNN
-	1    5250 4200
+P 5400 4550
+F 0 "#PWR019" H 5400 4400 50  0001 C CNN
+F 1 "+3.3V" H 5415 4723 50  0000 C CNN
+F 2 "" H 5400 4550 50  0001 C CNN
+F 3 "" H 5400 4550 50  0001 C CNN
+	1    5400 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -469,17 +479,6 @@ F 3 "" H 1850 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
-U 1 1 5E36A308
-P 2250 3950
-F 0 "#PWR05" H 2250 3700 50  0001 C CNN
-F 1 "GND" H 2255 3777 50  0000 C CNN
-F 2 "" H 2250 3950 50  0001 C CNN
-F 3 "" H 2250 3950 50  0001 C CNN
-	1    2250 3950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR08
 U 1 1 5E8C0CA2
 P 2250 7100
@@ -488,6 +487,17 @@ F 1 "GND" H 2255 6927 50  0000 C CNN
 F 2 "" H 2250 7100 50  0001 C CNN
 F 3 "" H 2250 7100 50  0001 C CNN
 	1    2250 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5E36A308
+P 2450 3300
+F 0 "#PWR05" H 2450 3050 50  0001 C CNN
+F 1 "GND" H 2455 3127 50  0000 C CNN
+F 2 "" H 2450 3300 50  0001 C CNN
+F 3 "" H 2450 3300 50  0001 C CNN
+	1    2450 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -515,14 +525,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E554DC7
-P 5250 5400
+P 5400 5750
 AR Path="/5E548C17/5E554DC7" Ref="#PWR?"  Part="1" 
 AR Path="/5E554DC7" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 5250 5150 50  0001 C CNN
-F 1 "GND" H 5255 5227 50  0000 C CNN
-F 2 "" H 5250 5400 50  0001 C CNN
-F 3 "" H 5250 5400 50  0001 C CNN
-	1    5250 5400
+F 0 "#PWR020" H 5400 5500 50  0001 C CNN
+F 1 "GND" H 5405 5577 50  0000 C CNN
+F 2 "" H 5400 5750 50  0001 C CNN
+F 3 "" H 5400 5750 50  0001 C CNN
+	1    5400 5750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -539,27 +549,27 @@ $EndComp
 $Comp
 L Device:R_US R5
 U 1 1 5E57A041
-P 5750 4550
-F 0 "R5" H 5818 4596 50  0000 L CNN
-F 1 "2k2" H 5818 4505 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5790 4540 50  0001 C CNN
-F 3 "~" H 5750 4550 50  0001 C CNN
-F 4 "A129814CT-ND" H 5750 4550 50  0001 C CNN "Digi-Key_PN"
-F 5 "CRGCQ1206F2K2" H 5750 4550 50  0001 C CNN "MPN"
-	1    5750 4550
+P 5900 4900
+F 0 "R5" H 5968 4946 50  0000 L CNN
+F 1 "2k2" H 5968 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5940 4890 50  0001 C CNN
+F 3 "~" H 5900 4900 50  0001 C CNN
+F 4 "A129814CT-ND" H 5900 4900 50  0001 C CNN "Digi-Key_PN"
+F 5 "CRGCQ1206F2K2" H 5900 4900 50  0001 C CNN "MPN"
+	1    5900 4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_US R6
 U 1 1 5E57AA25
-P 6150 4550
-F 0 "R6" H 6218 4596 50  0000 L CNN
-F 1 "2k2" H 6218 4505 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6190 4540 50  0001 C CNN
-F 3 "~" H 6150 4550 50  0001 C CNN
-F 4 "A129814CT-ND" H 6150 4550 50  0001 C CNN "Digi-Key_PN"
-F 5 "CRGCQ1206F2K2" H 6150 4550 50  0001 C CNN "MPN"
-	1    6150 4550
+P 6300 4900
+F 0 "R6" H 6368 4946 50  0000 L CNN
+F 1 "2k2" H 6368 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6340 4890 50  0001 C CNN
+F 3 "~" H 6300 4900 50  0001 C CNN
+F 4 "A129814CT-ND" H 6300 4900 50  0001 C CNN "Digi-Key_PN"
+F 5 "CRGCQ1206F2K2" H 6300 4900 50  0001 C CNN "MPN"
+	1    6300 4900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -712,17 +722,17 @@ $EndComp
 $Comp
 L SamacSys_Parts:TB008A-508-03BE J6
 U 1 1 5E329C9D
-P 1850 3750
-F 0 "J6" H 2477 3701 50  0000 L CNN
-F 1 "Extra SW 1" H 2477 3610 50  0000 L CNN
-F 2 "Kicad_extra_components:CUI_TBP02R2-381-03BE" H 1850 3750 50  0001 L BNN
-F 3 "https://www.cuidevices.com/product/resource/digikeypdf/tb008a-508.pdf" H 1850 3750 50  0001 L BNN
-F 4 "CUI" H 1850 3750 50  0001 L BNN "Field4"
-F 5 "102-6423-ND" H 1850 3750 50  0001 C CNN "Digi-Key_PN"
-F 6 "  	TBP01R2-508-03BE " H 1850 3750 50  0001 C CNN "MPN"
-F 7 "production" H 1850 3750 50  0001 C CNN "fit_field"
-F 8 "production" H 1850 3750 50  0001 C CNN "Config"
-	1    1850 3750
+P 1950 3000
+F 0 "J6" H 2577 2951 50  0000 L CNN
+F 1 "Extra SW 1" H 2577 2860 50  0000 L CNN
+F 2 "Kicad_extra_components:CUI_TBP02R2-381-03BE" H 1950 3000 50  0001 L BNN
+F 3 "https://www.cuidevices.com/product/resource/digikeypdf/tb008a-508.pdf" H 1950 3000 50  0001 L BNN
+F 4 "CUI" H 1950 3000 50  0001 L BNN "Field4"
+F 5 "102-6423-ND" H 1950 3000 50  0001 C CNN "Digi-Key_PN"
+F 6 "  	TBP01R2-508-03BE " H 1950 3000 50  0001 C CNN "MPN"
+F 7 "production" H 1950 3000 50  0001 C CNN "fit_field"
+F 8 "production" H 1950 3000 50  0001 C CNN "Config"
+	1    1950 3000
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -875,62 +885,62 @@ $EndComp
 $Comp
 L TB008A-508-04BE:TB008A-508-04BE J3
 U 1 1 5E31E1D5
-P 1450 2650
-F 0 "J3" H 1750 2700 50  0000 C CNN
-F 1 "Limit SW_XY" H 1900 2600 50  0000 C CNN
-F 2 "Kicad_extra_components:CUI_TBP02R2-381-04BE" H 1450 2650 50  0001 L BNN
-F 3 "https://www.cuidevices.com/product/resource/digikeypdf/tb008a-508.pdf" H 1450 2650 50  0001 L BNN
-F 4 "CUI" H 1450 2650 50  0001 L BNN "Field4"
-F 5 "102-6424-ND" H 1450 2650 50  0001 C CNN "Digi-Key_PN"
-F 6 "  	TBP01R2-508-04BE " H 1450 2650 50  0001 C CNN "MPN"
-F 7 "production" H 1450 2650 50  0001 C CNN "fit_field"
-F 8 "production" H 1450 2650 50  0001 C CNN "Config"
-	1    1450 2650
+P 1550 1900
+F 0 "J3" H 1850 1950 50  0000 C CNN
+F 1 "Limit SW_XY" H 2000 1850 50  0000 C CNN
+F 2 "Kicad_extra_components:CUI_TBP02R2-381-04BE" H 1550 1900 50  0001 L BNN
+F 3 "https://www.cuidevices.com/product/resource/digikeypdf/tb008a-508.pdf" H 1550 1900 50  0001 L BNN
+F 4 "CUI" H 1550 1900 50  0001 L BNN "Field4"
+F 5 "102-6424-ND" H 1550 1900 50  0001 C CNN "Digi-Key_PN"
+F 6 "  	TBP01R2-508-04BE " H 1550 1900 50  0001 C CNN "MPN"
+F 7 "production" H 1550 1900 50  0001 C CNN "fit_field"
+F 8 "production" H 1550 1900 50  0001 C CNN "Config"
+	1    1550 1900
 	-1   0    0    1   
 $EndComp
 $Comp
 L TB008A-508-04BE:TB008A-508-04BE J4
 U 1 1 5E3275A4
-P 1450 3050
-F 0 "J4" H 1677 3146 50  0000 L CNN
-F 1 "Limit SW_ZA" H 1677 3055 50  0000 L CNN
-F 2 "Kicad_extra_components:CUI_TBP02R2-381-04BE" H 1450 3050 50  0001 L BNN
-F 3 "https://www.cuidevices.com/product/resource/digikeypdf/tb008a-508.pdf" H 1450 3050 50  0001 L BNN
-F 4 "CUI" H 1450 3050 50  0001 L BNN "Field4"
-F 5 "102-6424-ND" H 1450 3050 50  0001 C CNN "Digi-Key_PN"
-F 6 "  	TBP01R2-508-04BE " H 1450 3050 50  0001 C CNN "MPN"
-F 7 "production" H 1450 3050 50  0001 C CNN "fit_field"
-F 8 "production" H 1450 3050 50  0001 C CNN "Config"
-	1    1450 3050
+P 1550 2300
+F 0 "J4" H 1777 2396 50  0000 L CNN
+F 1 "Limit SW_ZA" H 1777 2305 50  0000 L CNN
+F 2 "Kicad_extra_components:CUI_TBP02R2-381-04BE" H 1550 2300 50  0001 L BNN
+F 3 "https://www.cuidevices.com/product/resource/digikeypdf/tb008a-508.pdf" H 1550 2300 50  0001 L BNN
+F 4 "CUI" H 1550 2300 50  0001 L BNN "Field4"
+F 5 "102-6424-ND" H 1550 2300 50  0001 C CNN "Digi-Key_PN"
+F 6 "  	TBP01R2-508-04BE " H 1550 2300 50  0001 C CNN "MPN"
+F 7 "production" H 1550 2300 50  0001 C CNN "fit_field"
+F 8 "production" H 1550 2300 50  0001 C CNN "Config"
+	1    1550 2300
 	-1   0    0    1   
 $EndComp
 $Comp
 L TB008A-508-04BE:TB008A-508-04BE J5
 U 1 1 5E32807A
-P 1450 3450
-F 0 "J5" H 1677 3546 50  0000 L CNN
-F 1 "Extra SW 0" H 1677 3455 50  0000 L CNN
-F 2 "Kicad_extra_components:CUI_TBP02R2-381-04BE" H 1450 3450 50  0001 L BNN
-F 3 "https://www.cuidevices.com/product/resource/digikeypdf/tb008a-508.pdf" H 1450 3450 50  0001 L BNN
-F 4 "CUI" H 1450 3450 50  0001 L BNN "Field4"
-F 5 "102-6424-ND" H 1450 3450 50  0001 C CNN "Digi-Key_PN"
-F 6 "  	TBP01R2-508-04BE " H 1450 3450 50  0001 C CNN "MPN"
-F 7 "production" H 1450 3450 50  0001 C CNN "fit_field"
-F 8 "production" H 1450 3450 50  0001 C CNN "Config"
-	1    1450 3450
+P 1550 2700
+F 0 "J5" H 1777 2796 50  0000 L CNN
+F 1 "Extra SW 0" H 1777 2705 50  0000 L CNN
+F 2 "Kicad_extra_components:CUI_TBP02R2-381-04BE" H 1550 2700 50  0001 L BNN
+F 3 "https://www.cuidevices.com/product/resource/digikeypdf/tb008a-508.pdf" H 1550 2700 50  0001 L BNN
+F 4 "CUI" H 1550 2700 50  0001 L BNN "Field4"
+F 5 "102-6424-ND" H 1550 2700 50  0001 C CNN "Digi-Key_PN"
+F 6 "  	TBP01R2-508-04BE " H 1550 2700 50  0001 C CNN "MPN"
+F 7 "production" H 1550 2700 50  0001 C CNN "fit_field"
+F 8 "production" H 1550 2700 50  0001 C CNN "Config"
+	1    1550 2700
 	-1   0    0    1   
 $EndComp
 $Comp
 L Memory_EEPROM:24LC16 U?
 U 1 1 5E554DC1
-P 5250 4950
+P 5400 5300
 AR Path="/5E548C17/5E554DC1" Ref="U?"  Part="1" 
 AR Path="/5E554DC1" Ref="U6"  Part="1" 
-F 0 "U6" H 5400 5350 50  0000 C CNN
-F 1 "24LC16" H 5450 5250 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5250 4950 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21703d.pdf" H 5250 4950 50  0001 C CNN
-	1    5250 4950
+F 0 "U6" H 5550 5700 50  0000 C CNN
+F 1 "24LC16" H 5600 5600 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5400 5300 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21703d.pdf" H 5400 5300 50  0001 C CNN
+	1    5400 5300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -949,26 +959,26 @@ F 7 "302-S401" H 5600 2700 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 2150 2450 1100 900 
+S 2250 1700 1100 900 
 U 5E2EF045
 F0 "Opto-isolated switches" 50
 F1 "opto_limits.sch" 50
-F2 "SW_XMIN" I L 2150 2550 50 
-F3 "SW_XMAX" I L 2150 2650 50 
-F4 "SW_YMIN" I L 2150 2750 50 
-F5 "SW_YMAX" I L 2150 2850 50 
-F6 "LIM_XMIN" I R 3250 2550 50 
-F7 "LIM_XMAX" I R 3250 2650 50 
-F8 "LIM_YMAX" I R 3250 2850 50 
-F9 "LIM_YMIN" I R 3250 2750 50 
-F10 "SW_ZMIN" I L 2150 2950 50 
-F11 "SW_ZMAX" I L 2150 3050 50 
-F12 "LIM_ZMIN" I R 3250 2950 50 
-F13 "LIM_ZMAX" I R 3250 3050 50 
-F14 "Probe" I R 3250 3150 50 
-F15 "Extra_SW" I R 3250 3250 50 
-F16 "SW_Extra" I L 2150 3250 50 
-F17 "SW_Probe" I L 2150 3150 50 
+F2 "SW_XMIN" I L 2250 1800 50 
+F3 "SW_XMAX" I L 2250 1900 50 
+F4 "SW_YMIN" I L 2250 2000 50 
+F5 "SW_YMAX" I L 2250 2100 50 
+F6 "LIM_XMIN" I R 3350 1800 50 
+F7 "LIM_XMAX" I R 3350 1900 50 
+F8 "LIM_YMAX" I R 3350 2100 50 
+F9 "LIM_YMIN" I R 3350 2000 50 
+F10 "SW_ZMIN" I L 2250 2200 50 
+F11 "SW_ZMAX" I L 2250 2300 50 
+F12 "LIM_ZMIN" I R 3350 2200 50 
+F13 "LIM_ZMAX" I R 3350 2300 50 
+F14 "Probe" I R 3350 2400 50 
+F15 "Extra_SW" I R 3350 2500 50 
+F16 "SW_Extra" I L 2250 2500 50 
+F17 "SW_Probe" I L 2250 2400 50 
 $EndSheet
 $Sheet
 S 7600 1900 1300 1450
