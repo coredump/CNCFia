@@ -27,6 +27,14 @@ Connection ~ 6150 4850
 NoConn ~ 4850 4850
 NoConn ~ 4850 4950
 NoConn ~ 4850 5050
+NoConn ~ 5400 3550
+NoConn ~ 5400 3650
+NoConn ~ 5400 3750
+NoConn ~ 5400 3850
+NoConn ~ 5900 3850
+NoConn ~ 5900 3750
+NoConn ~ 5900 3650
+NoConn ~ 5900 3550
 Wire Wire Line
 	900  7100 900  7050
 Wire Wire Line

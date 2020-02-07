@@ -29,6 +29,10 @@ fp-info-cache
 *.par
 *.rules
 
+*.zip
+gerber/*
+*.pdf
+
 # Exported BOM files
 *.xml
 *.csv
