@@ -1,4 +1,4 @@
-update=2/7/2020 12:07:19 AM
+update=2/10/2020 10:24:30 AM
 version=1
 last_client=kicad
 [general]
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=CNC_generic_adapter.net
-LastSTEPExportPath=
+LastSTEPExportPath=CNCFia.step
 LastIDFExportPath=
 LastVRMLExportPath=
 LastSpecctraDSNExportPath=CNCFia.dsn
@@ -79,7 +79,7 @@ DimensionPrecision=1
 SolderMaskClearance=0.051
 SolderMaskMinWidth=0.25
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=2

@@ -18,7 +18,6 @@ Comment7 ""
 Comment8 ""
 Comment9 ""
 $EndDescr
-Connection ~ 2450 3200
 Connection ~ 5400 4750
 Connection ~ 5400 5650
 Connection ~ 5900 4750
@@ -144,8 +143,6 @@ Wire Wire Line
 Wire Wire Line
 	2250 2400 1950 2400
 Wire Wire Line
-	2450 2900 2450 3200
-Wire Wire Line
 	9250 2150 8900 2150
 Wire Wire Line
 	9250 2250 8900 2250
@@ -253,6 +250,8 @@ Text GLabel 1950 3100 2    50   Output ~ 0
 E_Stop
 Text GLabel 2000 5550 3    50   Output ~ 0
 EXT_5V
+Text GLabel 2450 2900 2    50   Input ~ 0
+OPTO_GND
 Text GLabel 3000 7100 2    50   Input ~ 0
 OPTO_GND
 Text GLabel 3350 1800 2    50   Output ~ 0

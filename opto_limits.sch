@@ -45,10 +45,6 @@ Connection ~ 9350 3100
 Connection ~ 9650 2250
 Connection ~ 9650 3300
 Wire Wire Line
-	3400 3450 3400 3400
-Wire Wire Line
-	8550 3450 8550 3400
-Wire Wire Line
 	3300 2800 3400 2800
 Wire Wire Line
 	3300 3400 3400 3400
@@ -89,6 +85,8 @@ Wire Wire Line
 Wire Wire Line
 	8550 3400 8550 3200
 Wire Wire Line
+	3400 3400 3400 3650
+Wire Wire Line
 	3550 2700 3300 2700
 Wire Wire Line
 	8700 2700 8450 2700
@@ -96,6 +94,8 @@ Wire Wire Line
 	3900 2250 4200 2250
 Wire Wire Line
 	4200 2250 4500 2250
+Wire Wire Line
+	8550 3400 8550 3700
 Wire Wire Line
 	9050 2250 9350 2250
 Wire Wire Line
@@ -190,12 +190,8 @@ Wire Wire Line
 	8700 2700 10300 2700
 Text GLabel 850  2250 1    50   Input ~ 0
 OPTO_5V
-Text GLabel 3400 3450 3    50   Input ~ 0
-OPTO_GND
 Text GLabel 6000 2250 1    50   Input ~ 0
 OPTO_5V
-Text GLabel 8550 3450 3    50   Input ~ 0
-OPTO_GND
 Text HLabel 2700 2800 0    50   Input ~ 0
 SW_XMIN
 Text HLabel 2700 3000 0    50   Input ~ 0
@@ -248,6 +244,28 @@ F 1 "+3.3V" H 10315 2423 50  0000 C CNN
 F 2 "" H 10300 2250 50  0001 C CNN
 F 3 "" H 10300 2250 50  0001 C CNN
 	1    10300 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5E3FEA16
+P 3400 3650
+F 0 "#PWR010" H 3400 3400 50  0001 C CNN
+F 1 "GND" H 3405 3477 50  0000 C CNN
+F 2 "" H 3400 3650 50  0001 C CNN
+F 3 "" H 3400 3650 50  0001 C CNN
+	1    3400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5E3FFBB7
+P 8550 3700
+F 0 "#PWR011" H 8550 3450 50  0001 C CNN
+F 1 "GND" H 8555 3527 50  0000 C CNN
+F 2 "" H 8550 3700 50  0001 C CNN
+F 3 "" H 8550 3700 50  0001 C CNN
+	1    8550 3700
 	1    0    0    -1  
 $EndComp
 $Comp

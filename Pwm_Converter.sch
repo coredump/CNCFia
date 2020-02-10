@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 4 5
 Title ""
 Date "2020-02-07"
 Rev "b4"
@@ -224,6 +224,9 @@ F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5540 1840 50  0
 F 3 "~" H 5500 1850 50  0001 C CNN
 F 4 "CRGCQ1206J10K" V 5500 1850 50  0001 C CNN "MPN"
 F 5 "A130183CT-ND" V 5500 1850 50  0001 C CNN "Digi-Key_PN"
+F 6 "R" H 5500 1850 50  0001 C CNN "Spice_Primitive"
+F 7 "10k" H 5500 1850 50  0001 C CNN "Spice_Model"
+F 8 "Y" H 5500 1850 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5500 1850
 	0    1    1    0   
 $EndComp
@@ -237,6 +240,9 @@ F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2700 3200 50  
 F 3 "~" H 2700 3200 50  0001 C CNN
 F 4 "CL31A106MQHNNNE" H 2700 3200 50  0001 C CNN "MPN"
 F 5 "1276-3045-1-ND" H 2700 3200 50  0001 C CNN "Digi-Key_PN"
+F 6 "C" H 2700 3200 50  0001 C CNN "Spice_Primitive"
+F 7 "10u" H 2700 3200 50  0001 C CNN "Spice_Model"
+F 8 "Y" H 2700 3200 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    2700 3200
 	-1   0    0    1   
 $EndComp
@@ -276,6 +282,9 @@ F 2 "Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal" H 4850 1850 50  00
 F 3 "https://www.piher.net/pdf/09-N6v03.pdf" H 4850 1850 50  0001 C CNN
 F 4 "1993-1217-ND" H 4850 1850 50  0001 C CNN "Digi-Key_PN"
 F 5 " N6L50T0C-203 " H 4850 1850 50  0001 C CNN "MPN"
+F 6 "R" H 4850 1850 50  0001 C CNN "Spice_Primitive"
+F 7 "20k" H 4850 1850 50  0001 C CNN "Spice_Model"
+F 8 "Y" H 4850 1850 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    4850 1850
 	0    -1   -1   0   
 $EndComp
@@ -296,6 +305,10 @@ F 9 "/product-detail/en/texas-instruments/LM358P/296-1395-5-ND/277042" H 3550 37
 F 10 "IC OPAMP GP 2 CIRCUIT 8DIP" H 3550 3850 60  0001 L CNN "Description"
 F 11 "Texas Instruments" H 3550 3950 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 3550 4050 60  0001 L CNN "Status"
+F 13 "X" H 3350 2850 50  0001 C CNN "Spice_Primitive"
+F 14 "LMX58_LM2904" H 3350 2850 50  0001 C CNN "Spice_Model"
+F 15 "Y" H 3350 2850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 16 "sim\\LMx58_LM2904.CIR" H 3350 2850 50  0001 C CNN "Spice_Lib_File"
 	1    3350 2850
 	1    0    0    -1  
 $EndComp
@@ -316,6 +329,10 @@ F 9 "/product-detail/en/texas-instruments/LM358P/296-1395-5-ND/277042" H 5600 36
 F 10 "IC OPAMP GP 2 CIRCUIT 8DIP" H 5600 3750 60  0001 L CNN "Description"
 F 11 "Texas Instruments" H 5600 3850 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 5600 3950 60  0001 L CNN "Status"
+F 13 "X" H 5400 2750 50  0001 C CNN "Spice_Primitive"
+F 14 "LMX58_LM2904" H 5400 2750 50  0001 C CNN "Spice_Model"
+F 15 "Y" H 5400 2750 50  0001 C CNN "Spice_Netlist_Enabled"
+F 16 "sim\\LMx58_LM2904.CIR" H 5400 2750 50  0001 C CNN "Spice_Lib_File"
 	2    5400 2750
 	1    0    0    -1  
 $EndComp
