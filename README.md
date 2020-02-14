@@ -18,20 +18,22 @@ Support for nine voltage shifted outputs, mosfet (2n700X) driven. Enough to prov
 
 The mosfets connect the outputs to GND, so when wiring make sure to provide the 5V common wire to all positive (+) signals and the outputs to the negative (-) signals.
 
-TKTK example 
+TODO example
 
-# Jumper Settings
+## Jumper Settings
 
 |  JP1  | Result                                                                                                   |
 | :---: | -------------------------------------------------------------------------------------------------------- |
 |  1-2  | 5V voltage for board functions will be provided by external power source connected to **EXTERNAL 5V IN** |
 |  1-3  | 5V to board functions will be provided by the MCU 5V Pin connected to the controller input               |
 
+## Connector Descriptions
 
+TODO add descriptions and image
 
-# Electrical notes
+## Electrical notes
 
-View this project on [CADLAB.io](https://cadlab.io/project/2455). 
+View this project on [CADLAB.io](https://cadlab.io/project/2459).
 
 All calculations were made considering a 3.3V output from the driving MCU pins, while keeping the output currents under 10 mA, what should be safe for most of the MCUs around.
 
@@ -39,4 +41,4 @@ The 3904s driving the relays have a base current (Ib) of ~ 7.8 mA, that should b
 
 The LTV-847s are used with typical values for Vf and If, according to datasheet specs.
 
-The OPAMP output for the spindle can be regulated with a potentiometer and from the 3.3V PWM it can get values close to 11V with a 12V power source. Simulated circuit shows a 0.4s approx time to get to the stable voltage.
+The OPAMP output for the spindle can be regulated with a potentiometer and from the 3.3V PWM it can get values close to 11V with a 12V power source. Simulated circuit shows a 0.4s approximately time to get to the stable voltage.
