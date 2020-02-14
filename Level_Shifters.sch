@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 6
 Title "Level shifters"
-Date "2020-02-07"
-Rev "b4"
+Date "2020-02-12"
+Rev "b5"
 Comp "c6p.dev"
 Comment1 "Takes care of converting 3.3v signal to 5v used by drivers"
 Comment2 ""
@@ -18,130 +18,361 @@ Comment7 ""
 Comment8 ""
 Comment9 ""
 $EndDescr
-Connection ~ 2300 3750
-Connection ~ 4150 3750
+Connection ~ 2100 3000
+Connection ~ 4100 3000
+Connection ~ 6350 3000
 Wire Wire Line
-	1850 3400 1750 3400
+	2100 2600 2100 2650
 Wire Wire Line
-	3700 3400 3600 3400
+	2100 2950 2100 3000
 Wire Wire Line
-	2300 3600 2300 3750
+	4100 2600 4100 2650
 Wire Wire Line
-	4150 3600 4150 3750
+	4100 2950 4100 3000
 Wire Wire Line
-	2300 3750 2300 4000
+	6350 2600 6350 2650
 Wire Wire Line
-	4150 3750 4150 4000
+	6350 2950 6350 3000
 Wire Wire Line
-	1750 3400 1750 3750
+	1950 1550 2050 1550
 Wire Wire Line
-	3600 3400 3600 3750
+	1950 3400 2050 3400
 Wire Wire Line
-	1750 3750 2300 3750
+	3950 3400 4050 3400
 Wire Wire Line
-	3600 3750 4150 3750
-Text HLabel 1850 2200 0    50   Input ~ 0
-LV_1
-Text HLabel 1850 2400 0    50   Input ~ 0
-LV_2
-Text HLabel 1850 2600 0    50   Input ~ 0
-LV_3
-Text HLabel 1850 2800 0    50   Input ~ 0
-LV_4
-Text HLabel 1850 3000 0    50   Input ~ 0
-LV_5
-Text HLabel 1850 3200 0    50   Input ~ 0
-LV_6
-Text HLabel 2200 1800 1    50   Input ~ 0
-LV
-Text HLabel 2400 1800 1    50   Input ~ 0
-HV
-Text HLabel 2750 2200 2    50   Output ~ 0
-HV_1
-Text HLabel 2750 2400 2    50   Output ~ 0
-HV_2
-Text HLabel 2750 2600 2    50   Output ~ 0
-HV_3
-Text HLabel 2750 2800 2    50   Output ~ 0
-HV_4
-Text HLabel 2750 3000 2    50   Output ~ 0
-HV_5
-Text HLabel 2750 3200 2    50   Output ~ 0
-HV_6
-Text HLabel 3700 2200 0    50   Input ~ 0
-LV_7
-Text HLabel 3700 2400 0    50   Input ~ 0
-LV_8
-Text HLabel 3700 2600 0    50   Input ~ 0
-LV_9
-Text HLabel 3700 2800 0    50   Input ~ 0
-LV_10
-Text HLabel 3700 3000 0    50   Input ~ 0
-LV_11
-Text HLabel 3700 3200 0    50   Input ~ 0
-LV_12
-Text HLabel 4050 1800 1    50   Input ~ 0
-LV
-Text HLabel 4250 1800 1    50   Input ~ 0
-HV
-Text HLabel 4600 2200 2    50   Output ~ 0
-HV_7
-Text HLabel 4600 2400 2    50   Output ~ 0
-HV_8
-Text HLabel 4600 2600 2    50   Output ~ 0
-HV_9
-Text HLabel 4600 2800 2    50   Output ~ 0
-HV_10
-Text HLabel 4600 3000 2    50   Output ~ 0
-HV_11
-Text HLabel 4600 3200 2    50   Output ~ 0
-HV_12
+	4000 1600 4100 1600
+Wire Wire Line
+	6050 1600 6150 1600
+Wire Wire Line
+	6200 3400 6300 3400
+Wire Wire Line
+	1950 3000 2100 3000
+Wire Wire Line
+	1950 3200 2100 3200
+Wire Wire Line
+	3950 3000 4100 3000
+Wire Wire Line
+	3950 3200 4100 3200
+Wire Wire Line
+	6200 3000 6350 3000
+Wire Wire Line
+	6200 3200 6350 3200
+Wire Wire Line
+	2100 3000 2100 3200
+Wire Wire Line
+	4100 3000 4100 3200
+Wire Wire Line
+	6350 3000 6350 3200
+Wire Wire Line
+	850  1150 1250 1150
+Wire Wire Line
+	2900 1200 3300 1200
+Wire Wire Line
+	4950 1200 5350 1200
+Wire Wire Line
+	700  3000 1250 3000
+Wire Wire Line
+	2700 3000 3250 3000
+Wire Wire Line
+	4950 3000 5500 3000
+Text HLabel 1250 1350 0    50   Input ~ 0
+X_Dir
+Text HLabel 1250 1550 0    50   Output ~ 0
+X_Pulse-
+Text HLabel 1250 3200 0    50   Input ~ 0
+~X_Enable~
+Text HLabel 1250 3400 0    50   Output ~ 0
+X_Enable-
+Text HLabel 1950 1150 2    50   Output ~ 0
+X_Dir-
+Text HLabel 1950 1350 2    50   Input ~ 0
+X_Step
+Text HLabel 3250 3200 0    50   Input ~ 0
+~Y_Enable~
+Text HLabel 3250 3400 0    50   Output ~ 0
+Y_Enable-
+Text HLabel 3300 1400 0    50   Input ~ 0
+Y_Dir
+Text HLabel 3300 1600 0    50   Output ~ 0
+Y_Pulse-
+Text HLabel 4000 1200 2    50   Output ~ 0
+Y_Dir-
+Text HLabel 4000 1400 2    50   Input ~ 0
+Y_Step
+Text HLabel 5350 1400 0    50   Input ~ 0
+Z_Dir
+Text HLabel 5350 1600 0    50   Output ~ 0
+Z_Pulse-
+Text HLabel 5500 3200 0    50   Input ~ 0
+~Z_Enable~
+Text HLabel 5500 3400 0    50   Output ~ 0
+Z_Enable-
+Text HLabel 6050 1200 2    50   Output ~ 0
+Z_Dir-
+Text HLabel 6050 1400 2    50   Input ~ 0
+Z_Step
 $Comp
-L power:GND #PWR02
-U 1 1 5E466523
-P 2300 4000
-F 0 "#PWR02" H 2300 3750 50  0001 C CNN
-F 1 "GND" H 2305 3827 50  0000 C CNN
-F 2 "" H 2300 4000 50  0001 C CNN
-F 3 "" H 2300 4000 50  0001 C CNN
-	1    2300 4000
+L power:+5V #PWR0115
+U 1 1 5E470CE6
+P 2100 2600
+F 0 "#PWR0115" H 2100 2450 50  0001 C CNN
+F 1 "+5V" H 2115 2773 50  0000 C CNN
+F 2 "" H 2100 2600 50  0001 C CNN
+F 3 "" H 2100 2600 50  0001 C CNN
+	1    2100 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR09
-U 1 1 5E46EE74
-P 4150 4000
-F 0 "#PWR09" H 4150 3750 50  0001 C CNN
-F 1 "GND" H 4155 3827 50  0000 C CNN
-F 2 "" H 4150 4000 50  0001 C CNN
-F 3 "" H 4150 4000 50  0001 C CNN
-	1    4150 4000
+L power:+5V #PWR022
+U 1 1 5E62B82F
+P 4100 2600
+F 0 "#PWR022" H 4100 2450 50  0001 C CNN
+F 1 "+5V" H 4115 2773 50  0000 C CNN
+F 2 "" H 4100 2600 50  0001 C CNN
+F 3 "" H 4100 2600 50  0001 C CNN
+	1    4100 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4504 U3
-U 1 1 5E45EBB0
-P 2300 2700
-F 0 "U3" H 2500 1800 50  0000 C CNN
-F 1 "4504" H 2500 1700 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2300 1400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/cd4504b.pdf" H 1650 2350 50  0001 C CNN
-F 4 "296-12010-1-ND" H 2300 2700 50  0001 C CNN "Digi-Key_PN"
-F 5 "CD4504BPWR" H 2300 2700 50  0001 C CNN "MPN"
-	1    2300 2700
+L power:+5V #PWR035
+U 1 1 5E6901AB
+P 6350 2600
+F 0 "#PWR035" H 6350 2450 50  0001 C CNN
+F 1 "+5V" H 6365 2773 50  0000 C CNN
+F 2 "" H 6350 2600 50  0001 C CNN
+F 3 "" H 6350 2600 50  0001 C CNN
+	1    6350 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4504 U4
-U 1 1 5E46EE6A
-P 4150 2700
-F 0 "U4" H 4350 1800 50  0000 C CNN
-F 1 "4504" H 4350 1700 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 4150 1400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/cd4504b.pdf" H 3500 2350 50  0001 C CNN
-F 4 "296-12010-1-ND" H 4150 2700 50  0001 C CNN "Digi-Key_PN"
-F 5 "CD4504BPWR" H 4150 2700 50  0001 C CNN "MPN"
-	1    4150 2700
+L power:GND #PWR012
+U 1 1 5E611C53
+P 700 3000
+F 0 "#PWR012" H 700 2750 50  0001 C CNN
+F 1 "GND" H 705 2827 50  0000 C CNN
+F 2 "" H 700 3000 50  0001 C CNN
+F 3 "" H 700 3000 50  0001 C CNN
+	1    700  3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5E493BA2
+P 850 1150
+F 0 "#PWR0113" H 850 900 50  0001 C CNN
+F 1 "GND" H 855 977 50  0000 C CNN
+F 2 "" H 850 1150 50  0001 C CNN
+F 3 "" H 850 1150 50  0001 C CNN
+	1    850  1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5E5F9523
+P 2050 1550
+F 0 "#PWR014" H 2050 1300 50  0001 C CNN
+F 1 "GND" H 2055 1377 50  0000 C CNN
+F 2 "" H 2050 1550 50  0001 C CNN
+F 3 "" H 2050 1550 50  0001 C CNN
+	1    2050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5E611C69
+P 2050 3400
+F 0 "#PWR015" H 2050 3150 50  0001 C CNN
+F 1 "GND" H 2055 3227 50  0000 C CNN
+F 2 "" H 2050 3400 50  0001 C CNN
+F 3 "" H 2050 3400 50  0001 C CNN
+	1    2050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5E62B8A7
+P 2700 3000
+F 0 "#PWR016" H 2700 2750 50  0001 C CNN
+F 1 "GND" H 2705 2827 50  0000 C CNN
+F 2 "" H 2700 3000 50  0001 C CNN
+F 3 "" H 2700 3000 50  0001 C CNN
+	1    2700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5E5FAA14
+P 2900 1200
+F 0 "#PWR017" H 2900 950 50  0001 C CNN
+F 1 "GND" H 2905 1027 50  0000 C CNN
+F 2 "" H 2900 1200 50  0001 C CNN
+F 3 "" H 2900 1200 50  0001 C CNN
+	1    2900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5E62B842
+P 4050 3400
+F 0 "#PWR019" H 4050 3150 50  0001 C CNN
+F 1 "GND" H 4055 3227 50  0000 C CNN
+F 2 "" H 4050 3400 50  0001 C CNN
+F 3 "" H 4050 3400 50  0001 C CNN
+	1    4050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5E5FAA2A
+P 4100 1600
+F 0 "#PWR021" H 4100 1350 50  0001 C CNN
+F 1 "GND" H 4105 1427 50  0000 C CNN
+F 2 "" H 4100 1600 50  0001 C CNN
+F 3 "" H 4100 1600 50  0001 C CNN
+	1    4100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 5E64EF2E
+P 4950 1200
+F 0 "#PWR024" H 4950 950 50  0001 C CNN
+F 1 "GND" H 4955 1027 50  0000 C CNN
+F 2 "" H 4950 1200 50  0001 C CNN
+F 3 "" H 4950 1200 50  0001 C CNN
+	1    4950 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 5E6901BB
+P 4950 3000
+F 0 "#PWR025" H 4950 2750 50  0001 C CNN
+F 1 "GND" H 4955 2827 50  0000 C CNN
+F 2 "" H 4950 3000 50  0001 C CNN
+F 3 "" H 4950 3000 50  0001 C CNN
+	1    4950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5E64EF1E
+P 6150 1600
+F 0 "#PWR026" H 6150 1350 50  0001 C CNN
+F 1 "GND" H 6155 1427 50  0000 C CNN
+F 2 "" H 6150 1600 50  0001 C CNN
+F 3 "" H 6150 1600 50  0001 C CNN
+	1    6150 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR034
+U 1 1 5E6901CB
+P 6300 3400
+F 0 "#PWR034" H 6300 3150 50  0001 C CNN
+F 1 "GND" H 6305 3227 50  0000 C CNN
+F 2 "" H 6300 3400 50  0001 C CNN
+F 3 "" H 6300 3400 50  0001 C CNN
+	1    6300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5E472418
+P 2100 2800
+F 0 "R1" H 2032 2845 50  0000 R CNN
+F 1 "10k" H 2032 2755 50  0000 R CNN
+F 2 "Kicad_extra_components:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2140 2790 50  0001 C CNN
+F 3 "~" H 2100 2800 50  0001 C CNN
+	1    2100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5E62B81D
+P 4100 2800
+F 0 "R2" H 4032 2845 50  0000 R CNN
+F 1 "10k" H 4032 2755 50  0000 R CNN
+F 2 "Kicad_extra_components:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4140 2790 50  0001 C CNN
+F 3 "~" H 4100 2800 50  0001 C CNN
+	1    4100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5E690199
+P 6350 2800
+F 0 "R3" H 6282 2845 50  0000 R CNN
+F 1 "10k" H 6282 2755 50  0000 R CNN
+F 2 "Kicad_extra_components:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6390 2790 50  0001 C CNN
+F 3 "~" H 6350 2800 50  0001 C CNN
+	1    6350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Local:NTJD5121N U3
+U 1 1 5E5C4E57
+P 1600 1400
+F 0 "U3" H 1600 1914 50  0000 C CNN
+F 1 "NTJD5121N" H 1600 1823 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 1600 1400 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTJD5121N-D.PDF" H 1600 1400 50  0001 C CNN
+	1    1600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Local:NTJD5121N U4
+U 1 1 5E611CBE
+P 1600 3250
+F 0 "U4" H 1600 3764 50  0000 C CNN
+F 1 "NTJD5121N" H 1600 3673 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 1600 3250 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTJD5121N-D.PDF" H 1600 3250 50  0001 C CNN
+	1    1600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Local:NTJD5121N U7
+U 1 1 5E62B897
+P 3600 3250
+F 0 "U7" H 3600 3764 50  0000 C CNN
+F 1 "NTJD5121N" H 3600 3673 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 3600 3250 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTJD5121N-D.PDF" H 3600 3250 50  0001 C CNN
+	1    3600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Local:NTJD5121N U8
+U 1 1 5E5FAA7F
+P 3650 1450
+F 0 "U8" H 3650 1964 50  0000 C CNN
+F 1 "NTJD5121N" H 3650 1873 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 3650 1450 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTJD5121N-D.PDF" H 3650 1450 50  0001 C CNN
+	1    3650 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Local:NTJD5121N U9
+U 1 1 5E64EF0E
+P 5700 1450
+F 0 "U9" H 5700 1964 50  0000 C CNN
+F 1 "NTJD5121N" H 5700 1873 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 5700 1450 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTJD5121N-D.PDF" H 5700 1450 50  0001 C CNN
+	1    5700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Local:NTJD5121N U10
+U 1 1 5E690184
+P 5850 3250
+F 0 "U10" H 5850 3764 50  0000 C CNN
+F 1 "NTJD5121N" H 5850 3673 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 5850 3250 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTJD5121N-D.PDF" H 5850 3250 50  0001 C CNN
+	1    5850 3250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
