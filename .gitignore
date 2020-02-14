@@ -5,6 +5,7 @@ _*
 bom/*
 manufactoring/
 SparkFun-KiCad-Libraries/Documentation/Example Project/*
+svg/*
 
 # Temporary files
 *.000
