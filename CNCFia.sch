@@ -28,7 +28,6 @@ Connection ~ 2450 2800
 Connection ~ 2550 2700
 Connection ~ 2650 2600
 Connection ~ 3050 5000
-Connection ~ 3900 4850
 Connection ~ 5300 3950
 Connection ~ 5300 4850
 Connection ~ 5800 3950
@@ -121,8 +120,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 2800 2750 2800
 Wire Wire Line
-	2450 6700 2250 6700
-Wire Wire Line
 	2550 2450 2550 2700
 Wire Wire Line
 	2550 2700 2750 2700
@@ -139,8 +136,6 @@ Wire Wire Line
 Wire Wire Line
 	2800 4900 2800 4750
 Wire Wire Line
-	2850 6700 3000 6700
-Wire Wire Line
 	2900 4750 2900 5000
 Wire Wire Line
 	2900 5000 3050 5000
@@ -148,30 +143,6 @@ Wire Wire Line
 	3050 5000 3050 5150
 Wire Wire Line
 	3050 5000 3150 5000
-Wire Wire Line
-	3750 4800 3750 4950
-Wire Wire Line
-	3750 6700 3750 6650
-Wire Wire Line
-	3800 4750 3800 4800
-Wire Wire Line
-	3800 4800 3750 4800
-Wire Wire Line
-	3900 4750 3900 4850
-Wire Wire Line
-	3900 4850 3900 4950
-Wire Wire Line
-	3900 4850 4200 4850
-Wire Wire Line
-	3950 6700 3750 6700
-Wire Wire Line
-	4200 4850 4200 5000
-Wire Wire Line
-	4200 6450 4200 6550
-Wire Wire Line
-	4450 6700 4700 6700
-Wire Wire Line
-	4700 6650 4700 6700
 Wire Wire Line
 	4800 1050 5250 1050
 Wire Wire Line
@@ -281,25 +252,25 @@ Wire Wire Line
 Wire Notes Line
 	750  3550 750  5450
 Wire Notes Line
-	750  5450 4400 5450
+	750  5450 3400 5450
 Wire Notes Line
 	750  6000 750  6950
 Wire Notes Line
-	750  6950 4850 6950
+	750  6950 2000 6950
 Wire Notes Line
-	4400 3550 750  3550
+	2000 6000 750  6000
 Wire Notes Line
-	4400 5450 4400 3550
+	2000 6950 2000 6000
+Wire Notes Line
+	3400 3550 750  3550
+Wire Notes Line
+	3400 5450 3400 3550
 Wire Notes Line
 	4800 3500 4800 5250
 Wire Notes Line
 	4800 3500 6800 3500
 Wire Notes Line
 	4800 5250 6800 5250
-Wire Notes Line
-	4850 6000 750  6000
-Wire Notes Line
-	4850 6950 4850 6000
 Wire Notes Line
 	6800 5250 6800 3500
 Text Notes 750  3500 0    50   ~ 0
@@ -310,8 +281,6 @@ Text Notes 4800 3450 0    50   ~ 0
 EEPROM
 Text GLabel 900  6650 1    50   Input ~ 0
 MCU_5V
-Text GLabel 1600 2500 2    50   Input ~ 0
-OPTO_GND
 Text GLabel 1850 6650 1    50   Input ~ 0
 EXT_5V
 Text GLabel 2000 4950 3    50   Output ~ 0
@@ -326,14 +295,6 @@ Text GLabel 2550 2450 1    50   Output ~ 0
 Reset
 Text GLabel 2650 2450 1    50   Output ~ 0
 Door
-Text GLabel 3000 6700 2    50   Input ~ 0
-OPTO_GND
-Text GLabel 3750 4950 3    50   Output ~ 0
-OPTO_GND
-Text GLabel 3750 6650 1    50   Input ~ 0
-MCU_5V
-Text GLabel 3900 4950 3    50   Output ~ 0
-OPTO_5V
 Text GLabel 4100 900  2    50   Output ~ 0
 LIM_XMin
 Text GLabel 4100 1000 2    50   Output ~ 0
@@ -350,10 +311,6 @@ Text GLabel 4100 1500 2    50   Output ~ 0
 Probe
 Text GLabel 4100 1600 2    50   Output ~ 0
 Extra_SW
-Text GLabel 4200 6450 1    50   Input ~ 0
-OPTO_5V
-Text GLabel 4700 6650 1    50   Input ~ 0
-EXT_5V
 Text GLabel 5400 1300 0    50   Input ~ 0
 LIM_XMin
 Text GLabel 5400 1400 0    50   Input ~ 0
@@ -491,17 +448,6 @@ F 3 "~" H 3050 5150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0104
-U 1 1 5E767917
-P 4200 5000
-F 0 "#FLG0104" H 4200 5075 50  0001 C CNN
-F 1 "PWR_FLAG" H 4200 5173 50  0000 C CNN
-F 2 "" H 4200 5000 50  0001 C CNN
-F 3 "~" H 4200 5000 50  0001 C CNN
-	1    4200 5000
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG0106
 U 1 1 5E76F202
 P 6650 1450
@@ -616,17 +562,6 @@ F 3 "" H 2100 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
-U 1 1 5E8C0CA2
-P 2250 6700
-F 0 "#PWR08" H 2250 6450 50  0001 C CNN
-F 1 "GND" H 2255 6527 50  0000 C CNN
-F 2 "" H 2250 6700 50  0001 C CNN
-F 3 "" H 2250 6700 50  0001 C CNN
-	1    2250 6700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR06
 U 1 1 5E306D9B
 P 2800 4900
@@ -699,19 +634,6 @@ F 5 "CRGCQ1206F2K2" H 6200 4100 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:Jumper_2_Open JP3
-U 1 1 5E8CC50A
-P 2650 6700
-F 0 "JP3" H 2650 6935 50  0000 C CNN
-F 1 "Opto_GND_Source" H 2650 6844 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2650 6700 50  0001 C CNN
-F 3 "~" H 2650 6700 50  0001 C CNN
-F 4 "production" H 2650 6700 50  0001 C CNN "fit_field"
-F 5 "production" H 2650 6700 50  0001 C CNN "Config"
-	1    2650 6700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Jumper:Jumper_3_Bridged12 JP?
 U 1 1 5E464A02
 P 1350 6700
@@ -724,19 +646,6 @@ F 3 "~" H 1350 6700 50  0001 C CNN
 F 4 "production" H 1350 6700 50  0001 C CNN "fit_field"
 F 5 "production" H 1350 6700 50  0001 C CNN "Config"
 	1    1350 6700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:Jumper_3_Bridged12 JP2
-U 1 1 5E8E9F02
-P 4200 6700
-F 0 "JP2" H 4200 6811 50  0000 C CNN
-F 1 "Opto_V_Source" H 4200 6902 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4200 6700 50  0001 C CNN
-F 3 "~" H 4200 6700 50  0001 C CNN
-F 4 "production" H 4200 6700 50  0001 C CNN "fit_field"
-F 5 "production" H 4200 6700 50  0001 C CNN "Config"
-	1    4200 6700
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -801,27 +710,6 @@ F 11 "  	TBP01R2-508-02BE " H 2800 4750 50  0001 C CNN "MPN"
 F 12 "production" H 2800 4750 50  0001 C CNN "fit_field"
 F 13 "production" H 2800 4750 50  0001 C CNN "Config"
 	1    2800 4750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L SamacSys_Parts:TB008A-508-02BE J8
-U 1 1 5E87F045
-P 3800 4750
-F 0 "J8" H 4428 4746 50  0000 L CNN
-F 1 "IN_OPTO_PWR" H 4428 4655 50  0000 L CNN
-F 2 "Kicad_extra_components:CUI_TBP02R2-381-02BE" H 4450 4850 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TB008A-508-02BE.pdf" H 4450 4750 50  0001 L CNN
-F 4 "Fixed Terminal Blocks screw type, 5.08 , 45 , 2 poles, CUI Blue, slotted screw, PCB mount" H 4450 4650 50  0001 L CNN "Description"
-F 5 "15.82" H 4450 4550 50  0001 L CNN "Height"
-F 6 "490-TB008A-508-02BE" H 4450 4450 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-TB008A-508-02BE" H 4450 4350 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI" H 4450 4250 50  0001 L CNN "Manufacturer_Name"
-F 9 "TB008A-508-02BE" H 4450 4150 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "102-6422-ND" H 3800 4750 50  0001 C CNN "Digi-Key_PN"
-F 11 "  	TBP01R2-508-02BE " H 3800 4750 50  0001 C CNN "MPN"
-F 12 "production" H 3800 4750 50  0001 C CNN "fit_field"
-F 13 "production" H 3800 4750 50  0001 C CNN "Config"
-	1    3800 4750
 	0    -1   -1   0   
 $EndComp
 $Comp

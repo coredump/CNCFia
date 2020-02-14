@@ -20,6 +20,15 @@ The mosfets connect the outputs to GND, so when wiring make sure to provide the 
 
 TKTK example 
 
+# Jumper Settings
+
+|  JP1  | Result                                                                                                   |
+| :---: | -------------------------------------------------------------------------------------------------------- |
+|  1-2  | 5V voltage for board functions will be provided by external power source connected to **EXTERNAL 5V IN** |
+|  1-3  | 5V to board functions will be provided by the MCU 5V Pin connected to the controller input               |
+
+
+
 # Electrical notes
 
 View this project on [CADLAB.io](https://cadlab.io/project/2455). 

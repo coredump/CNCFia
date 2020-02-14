@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 6 6
 Title ""
 Date "2020-02-12"
 Rev "b5"
@@ -182,10 +182,6 @@ Wire Wire Line
 	9600 1950 9600 3800
 Wire Wire Line
 	9600 3800 10250 3800
-Text GLabel 4850 6050 0    50   Input ~ 0
-OPTO_5V
-Text GLabel 6450 5250 2    50   Input ~ 0
-OPTO_5V
 Text HLabel 2650 3900 0    50   Input ~ 0
 SW_XMIN
 Text HLabel 2650 4100 0    50   Input ~ 0
@@ -219,6 +215,17 @@ Probe
 Text HLabel 10250 4400 2    50   Output ~ 0
 Extra_SW
 $Comp
+L power:+5V #PWR?
+U 1 1 5E486E4C
+P 4850 6050
+F 0 "#PWR?" H 4850 5900 50  0001 C CNN
+F 1 "+5V" H 4865 6223 50  0000 C CNN
+F 2 "" H 4850 6050 50  0001 C CNN
+F 3 "" H 4850 6050 50  0001 C CNN
+	1    4850 6050
+	1    0    0    -1  
+$EndComp
+$Comp
 L power:+3V3 #PWR?
 U 1 1 5E47CFB2
 P 5200 2550
@@ -238,6 +245,17 @@ F 1 "+3V3" H 6065 1923 50  0000 C CNN
 F 2 "" H 6050 1750 50  0001 C CNN
 F 3 "" H 6050 1750 50  0001 C CNN
 	1    6050 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E488231
+P 6450 5250
+F 0 "#PWR?" H 6450 5100 50  0001 C CNN
+F 1 "+5V" H 6465 5423 50  0000 C CNN
+F 2 "" H 6450 5250 50  0001 C CNN
+F 3 "" H 6450 5250 50  0001 C CNN
+	1    6450 5250
 	1    0    0    -1  
 $EndComp
 $Comp

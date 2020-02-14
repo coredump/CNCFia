@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 4 6
 Title ""
 Date "2020-02-12"
 Rev "b5"
@@ -308,6 +308,7 @@ F 8 "/product-detail/en/omron-electronics-inc-emc-div/G5LE-14-DC5/Z1011-ND/28037
 F 9 "RELAY GEN PURPOSE SPDT 10A 5V" H 5600 2850 60  0001 L CNN "Description"
 F 10 "Omron Electronics Inc-EMC Div" H 5600 2950 60  0001 L CNN "Manufacturer"
 F 11 "Active" H 5600 3050 60  0001 L CNN "Status"
+F 12 "Z2902-ND" H 5400 1850 50  0001 C CNN "Digi-Key_PN"
 	1    5400 1850
 	0    1    1    0   
 $EndComp
@@ -316,7 +317,7 @@ L dk_Power-Relays-Over-2-Amps:G5LE-14_DC5 RLY2
 U 1 1 5E48D2BA
 P 5400 3600
 F 0 "RLY2" V 4935 3600 50  0000 C CNN
-F 1 "G6RL-1 DC5 " V 5026 3600 50  0000 C CNN
+F 1 "G6RL-1 DC5" V 5026 3600 50  0000 C CNN
 F 2 "Kicad_extra_components:RELAY_G6RL-1_5VDC" H 5600 3800 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/307/en-g6rl-1221008.pdf" H 5600 3900 60  0001 L CNN
 F 4 "G6RL-1 DC5" H 5600 4100 60  0001 L CNN "MPN"
@@ -327,6 +328,7 @@ F 8 "/product-detail/en/omron-electronics-inc-emc-div/G5LE-14-DC5/Z1011-ND/28037
 F 9 "RELAY GEN PURPOSE SPDT 10A 5V" H 5600 4600 60  0001 L CNN "Description"
 F 10 "Omron Electronics Inc-EMC Div" H 5600 4700 60  0001 L CNN "Manufacturer"
 F 11 "Active" H 5600 4800 60  0001 L CNN "Status"
+F 12 "Z2902-ND" H 5400 3600 50  0001 C CNN "Digi-Key_PN"
 	1    5400 3600
 	0    1    1    0   
 $EndComp
@@ -335,7 +337,7 @@ L dk_Power-Relays-Over-2-Amps:G5LE-14_DC5 RLY3
 U 1 1 5E483E6F
 P 5400 5400
 F 0 "RLY3" V 4935 5400 50  0000 C CNN
-F 1 "G6RL-1 DC5 " V 5026 5400 50  0000 C CNN
+F 1 "G6RL-1 DC5" V 5026 5400 50  0000 C CNN
 F 2 "Kicad_extra_components:RELAY_G6RL-1_5VDC" H 5600 5600 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/307/en-g6rl-1221008.pdf" H 5600 5700 60  0001 L CNN
 F 4 "G6RL-1 DC5" H 5600 5900 60  0001 L CNN "MPN"
@@ -346,6 +348,7 @@ F 8 "/product-detail/en/omron-electronics-inc-emc-div/G5LE-14-DC5/Z1011-ND/28037
 F 9 "RELAY GEN PURPOSE SPDT 10A 5V" H 5600 6400 60  0001 L CNN "Description"
 F 10 "Omron Electronics Inc-EMC Div" H 5600 6500 60  0001 L CNN "Manufacturer"
 F 11 "Active" H 5600 6600 60  0001 L CNN "Status"
+F 12 "Z2902-ND" H 5400 5400 50  0001 C CNN "Digi-Key_PN"
 	1    5400 5400
 	0    1    1    0   
 $EndComp
@@ -354,7 +357,7 @@ L dk_Power-Relays-Over-2-Amps:G5LE-14_DC5 RLY4
 U 1 1 5E4A5E84
 P 5400 7100
 F 0 "RLY4" V 4935 7100 50  0000 C CNN
-F 1 "G6RL-1 DC5 " V 5026 7100 50  0000 C CNN
+F 1 "G6RL-1 DC5" V 5026 7100 50  0000 C CNN
 F 2 "Kicad_extra_components:RELAY_G6RL-1_5VDC" H 5600 7300 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/307/en-g6rl-1221008.pdf" H 5600 7400 60  0001 L CNN
 F 4 "G6RL-1 DC5" H 5600 7600 60  0001 L CNN "MPN"
@@ -365,6 +368,7 @@ F 8 "/product-detail/en/omron-electronics-inc-emc-div/G5LE-14-DC5/Z1011-ND/28037
 F 9 "RELAY GEN PURPOSE SPDT 10A 5V" H 5600 8100 60  0001 L CNN "Description"
 F 10 "Omron Electronics Inc-EMC Div" H 5600 8200 60  0001 L CNN "Manufacturer"
 F 11 "Active" H 5600 8300 60  0001 L CNN "Status"
+F 12 "Z2902-ND" H 5400 7100 50  0001 C CNN "Digi-Key_PN"
 	1    5400 7100
 	0    1    1    0   
 $EndComp
