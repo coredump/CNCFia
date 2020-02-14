@@ -66,6 +66,8 @@ Wire Wire Line
 Wire Wire Line
 	1600 1600 2750 1600
 Wire Wire Line
+	1600 2400 1600 2500
+Wire Wire Line
 	1600 2600 2650 2600
 Wire Wire Line
 	1600 2700 2550 2700
@@ -93,6 +95,8 @@ Wire Wire Line
 	1850 4800 1850 4900
 Wire Wire Line
 	1850 6650 1850 6700
+Wire Wire Line
+	1900 2400 1600 2400
 Wire Wire Line
 	1900 4750 1900 4800
 Wire Wire Line
@@ -548,6 +552,17 @@ F 1 "GND" H 1855 4727 50  0000 C CNN
 F 2 "" H 1850 4900 50  0001 C CNN
 F 3 "" H 1850 4900 50  0001 C CNN
 	1    1850 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E496D8C
+P 1900 2400
+F 0 "#PWR?" H 1900 2150 50  0001 C CNN
+F 1 "GND" H 1905 2227 50  0000 C CNN
+F 2 "" H 1900 2400 50  0001 C CNN
+F 3 "" H 1900 2400 50  0001 C CNN
+	1    1900 2400
 	1    0    0    -1  
 $EndComp
 $Comp
