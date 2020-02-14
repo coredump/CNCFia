@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NTJD5121N
+D Dual N-Channel Mosfet 60V, 295mA
+F https://www.onsemi.com/pub/Collateral/NTJD5121N-D.PDF
+$ENDCMP
+#
+#End Doc Library
