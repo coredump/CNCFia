@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 6 6
 Title ""
 Date "2020-02-12"
 Rev "b5"
@@ -22,19 +22,29 @@ NoConn ~ 2950 1300
 NoConn ~ 2950 1500
 NoConn ~ 2950 1700
 Wire Wire Line
-	3750 1100 3850 1100
-Wire Wire Line
-	3750 1700 3900 1700
-Wire Wire Line
 	2250 2200 2450 2200
+Wire Wire Line
+	2250 2350 4200 2350
+Wire Wire Line
+	2250 2500 4050 2500
+Wire Wire Line
+	2250 2650 3900 2650
+Wire Wire Line
+	2250 2800 3750 2800
+Wire Wire Line
+	2450 1100 2450 2200
 Wire Wire Line
 	2750 1900 2950 1900
 Wire Wire Line
-	3750 1500 4050 1500
+	2950 1100 2450 1100
+Wire Wire Line
+	3750 1100 3850 1100
 Wire Wire Line
 	3750 1300 4200 1300
 Wire Wire Line
-	2950 1100 2450 1100
+	3750 1500 4050 1500
+Wire Wire Line
+	3750 1700 3900 1700
 Wire Wire Line
 	3750 1900 3750 2800
 Wire Wire Line
@@ -43,16 +53,6 @@ Wire Wire Line
 	4050 1500 4050 2500
 Wire Wire Line
 	4200 1300 4200 2350
-Wire Wire Line
-	2450 1100 2450 2200
-Wire Wire Line
-	2250 2800 3750 2800
-Wire Wire Line
-	2250 2650 3900 2650
-Wire Wire Line
-	2250 2500 4050 2500
-Wire Wire Line
-	2250 2350 4200 2350
 Text HLabel 2250 2200 0    50   Input ~ 0
 SW_Door
 Text HLabel 2250 2350 0    50   Input ~ 0
@@ -75,11 +75,11 @@ F 3 "" H 2750 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR09
-U 1 1 5E569C7E
+L power:+3V3 #PWR0106
+U 1 1 5E476B7C
 P 3850 1100
-F 0 "#PWR09" H 3850 950 50  0001 C CNN
-F 1 "+3.3V" H 3865 1273 50  0000 C CNN
+F 0 "#PWR0106" H 3850 950 50  0001 C CNN
+F 1 "+3V3" H 3865 1273 50  0000 C CNN
 F 2 "" H 3850 1100 50  0001 C CNN
 F 3 "" H 3850 1100 50  0001 C CNN
 	1    3850 1100

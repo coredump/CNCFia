@@ -30,9 +30,21 @@ Connection ~ 6700 1650
 Connection ~ 6700 3400
 Connection ~ 6700 5200
 Wire Wire Line
+	2500 2250 3050 2250
+Wire Wire Line
 	2500 2400 2500 2250
 Wire Wire Line
+	2500 5750 3050 5750
+Wire Wire Line
 	2500 5900 2500 5750
+Wire Wire Line
+	3050 3400 3050 2650
+Wire Wire Line
+	3050 6900 3050 6150
+Wire Wire Line
+	3750 1650 3750 2250
+Wire Wire Line
+	3750 5200 3750 5750
 Wire Wire Line
 	3900 2650 3750 2650
 Wire Wire Line
@@ -42,55 +54,29 @@ Wire Wire Line
 Wire Wire Line
 	3900 6300 3900 6150
 Wire Wire Line
-	6700 1650 7050 1650
-Wire Wire Line
 	4650 1250 4650 1650
 Wire Wire Line
-	6150 1250 6150 1650
+	4650 1650 3750 1650
 Wire Wire Line
 	4650 1650 5100 1650
 Wire Wire Line
 	4650 2950 4650 3400
 Wire Wire Line
+	4650 3400 3050 3400
+Wire Wire Line
 	4650 3400 5100 3400
 Wire Wire Line
 	4650 4750 4650 5200
+Wire Wire Line
+	4650 5200 3750 5200
 Wire Wire Line
 	4650 5200 5100 5200
 Wire Wire Line
 	4650 6450 4650 6900
 Wire Wire Line
+	4650 6900 3050 6900
+Wire Wire Line
 	4650 6900 5100 6900
-Wire Wire Line
-	5700 1650 6150 1650
-Wire Wire Line
-	5700 3400 6150 3400
-Wire Wire Line
-	5700 5200 6150 5200
-Wire Wire Line
-	5700 6900 6150 6900
-Wire Wire Line
-	6150 2950 6150 3400
-Wire Wire Line
-	6150 4750 6150 5200
-Wire Wire Line
-	6150 6450 6150 6900
-Wire Wire Line
-	2500 2250 3050 2250
-Wire Wire Line
-	2500 5750 3050 5750
-Wire Wire Line
-	3750 5200 3750 5750
-Wire Wire Line
-	6150 1650 6700 1650
-Wire Wire Line
-	6150 3400 6700 3400
-Wire Wire Line
-	6150 5200 6700 5200
-Wire Wire Line
-	6150 6900 6700 6900
-Wire Wire Line
-	3750 1650 3750 2250
 Wire Wire Line
 	5250 1250 4650 1250
 Wire Wire Line
@@ -108,23 +94,37 @@ Wire Wire Line
 Wire Wire Line
 	5550 6450 6150 6450
 Wire Wire Line
-	3050 3400 3050 2650
+	5700 1650 6150 1650
 Wire Wire Line
-	3050 6900 3050 6150
+	5700 3400 6150 3400
 Wire Wire Line
-	4650 1650 3750 1650
+	5700 5200 6150 5200
 Wire Wire Line
-	4650 5200 3750 5200
+	5700 6900 6150 6900
 Wire Wire Line
-	4650 3400 3050 3400
+	6150 1250 6150 1650
 Wire Wire Line
-	4650 6900 3050 6900
+	6150 1650 6700 1650
 Wire Wire Line
-	6700 5200 6700 6900
+	6150 2950 6150 3400
+Wire Wire Line
+	6150 3400 6700 3400
+Wire Wire Line
+	6150 4750 6150 5200
+Wire Wire Line
+	6150 5200 6700 5200
+Wire Wire Line
+	6150 6450 6150 6900
+Wire Wire Line
+	6150 6900 6700 6900
 Wire Wire Line
 	6700 1650 6700 3400
 Wire Wire Line
+	6700 1650 7050 1650
+Wire Wire Line
 	6700 3400 6700 5200
+Wire Wire Line
+	6700 5200 6700 6900
 Text HLabel 3050 2450 0    50   Input ~ 0
 Relay_In_1
 Text HLabel 3050 5950 0    50   Input ~ 0

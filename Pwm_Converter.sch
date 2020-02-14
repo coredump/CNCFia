@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 4 6
 Title ""
 Date "2020-02-12"
 Rev "b5"
@@ -25,75 +25,75 @@ Connection ~ 4600 2850
 Connection ~ 5100 1850
 Connection ~ 5700 2750
 Wire Wire Line
-	2200 2950 2250 2950
-Wire Wire Line
-	3350 2650 3350 2600
-Wire Wire Line
-	4450 1850 4450 1900
-Wire Wire Line
-	4600 2900 4600 2850
-Wire Wire Line
-	5400 2550 5400 2500
-Wire Wire Line
-	5650 1850 5700 1850
+	1650 2950 1800 2950
 Wire Wire Line
 	2100 2950 2200 2950
 Wire Wire Line
-	3350 3150 3350 3050
-Wire Wire Line
-	4500 2850 4600 2850
-Wire Wire Line
-	4600 3200 4600 3100
-Wire Wire Line
-	5000 1850 5100 1850
-Wire Wire Line
-	5400 3050 5400 2950
-Wire Wire Line
-	1650 2950 1800 2950
-Wire Wire Line
-	2550 2950 2700 2950
-Wire Wire Line
-	2700 3100 2700 2950
-Wire Wire Line
-	3800 2850 3650 2850
-Wire Wire Line
-	4850 1700 4850 1550
-Wire Wire Line
-	3050 2750 2800 2750
-Wire Wire Line
-	4450 1850 4700 1850
-Wire Wire Line
-	4850 1550 5100 1550
-Wire Wire Line
-	5100 1850 5350 1850
-Wire Wire Line
-	5950 2750 5700 2750
-Wire Wire Line
-	5100 1550 5100 1850
-Wire Wire Line
-	2700 2950 3050 2950
-Wire Wire Line
-	3800 2850 4200 2850
-Wire Wire Line
-	2800 2750 2800 2300
-Wire Wire Line
-	4600 2850 5100 2850
-Wire Wire Line
-	3800 2300 3800 2850
-Wire Wire Line
 	2200 2950 2200 3550
 Wire Wire Line
-	3150 3550 3800 3550
-Wire Wire Line
-	3800 3550 3800 2850
+	2200 2950 2250 2950
 Wire Wire Line
 	2200 3550 2950 3550
 Wire Wire Line
+	2550 2950 2700 2950
+Wire Wire Line
+	2700 2950 3050 2950
+Wire Wire Line
+	2700 3100 2700 2950
+Wire Wire Line
+	2800 2300 3800 2300
+Wire Wire Line
+	2800 2750 2800 2300
+Wire Wire Line
+	3050 2750 2800 2750
+Wire Wire Line
+	3150 3550 3800 3550
+Wire Wire Line
+	3350 2650 3350 2600
+Wire Wire Line
+	3350 3150 3350 3050
+Wire Wire Line
+	3800 2300 3800 2850
+Wire Wire Line
+	3800 2850 3650 2850
+Wire Wire Line
+	3800 2850 4200 2850
+Wire Wire Line
+	3800 3550 3800 2850
+Wire Wire Line
+	4450 1850 4450 1900
+Wire Wire Line
+	4450 1850 4700 1850
+Wire Wire Line
+	4500 2850 4600 2850
+Wire Wire Line
+	4600 2850 5100 2850
+Wire Wire Line
+	4600 2900 4600 2850
+Wire Wire Line
+	4600 3200 4600 3100
+Wire Wire Line
+	4850 1550 5100 1550
+Wire Wire Line
+	4850 1700 4850 1550
+Wire Wire Line
+	5000 1850 5100 1850
+Wire Wire Line
+	5100 1550 5100 1850
+Wire Wire Line
 	5100 1850 5100 2650
+Wire Wire Line
+	5100 1850 5350 1850
+Wire Wire Line
+	5400 2550 5400 2500
+Wire Wire Line
+	5400 3050 5400 2950
+Wire Wire Line
+	5650 1850 5700 1850
 Wire Wire Line
 	5700 1850 5700 2750
 Wire Wire Line
-	2800 2300 3800 2300
+	5950 2750 5700 2750
 Text HLabel 1650 2950 0    50   Input ~ 0
 IN_Spn_PWM_0
 Text HLabel 5950 2750 2    50   Input ~ 0

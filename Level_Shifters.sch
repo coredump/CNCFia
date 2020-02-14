@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 3 6
 Title "Level shifters"
 Date "2020-02-12"
 Rev "b5"
@@ -22,59 +22,59 @@ Connection ~ 2100 3000
 Connection ~ 4100 3000
 Connection ~ 6350 3000
 Wire Wire Line
-	2100 2600 2100 2650
+	700  3000 1250 3000
 Wire Wire Line
-	2100 2950 2100 3000
-Wire Wire Line
-	4100 2600 4100 2650
-Wire Wire Line
-	4100 2950 4100 3000
-Wire Wire Line
-	6350 2600 6350 2650
-Wire Wire Line
-	6350 2950 6350 3000
+	850  1150 1250 1150
 Wire Wire Line
 	1950 1550 2050 1550
-Wire Wire Line
-	1950 3400 2050 3400
-Wire Wire Line
-	3950 3400 4050 3400
-Wire Wire Line
-	4000 1600 4100 1600
-Wire Wire Line
-	6050 1600 6150 1600
-Wire Wire Line
-	6200 3400 6300 3400
 Wire Wire Line
 	1950 3000 2100 3000
 Wire Wire Line
 	1950 3200 2100 3200
 Wire Wire Line
+	1950 3400 2050 3400
+Wire Wire Line
+	2100 2600 2100 2650
+Wire Wire Line
+	2100 2950 2100 3000
+Wire Wire Line
+	2100 3000 2100 3200
+Wire Wire Line
+	2700 3000 3250 3000
+Wire Wire Line
+	2900 1200 3300 1200
+Wire Wire Line
 	3950 3000 4100 3000
 Wire Wire Line
 	3950 3200 4100 3200
+Wire Wire Line
+	3950 3400 4050 3400
+Wire Wire Line
+	4000 1600 4100 1600
+Wire Wire Line
+	4100 2600 4100 2650
+Wire Wire Line
+	4100 2950 4100 3000
+Wire Wire Line
+	4100 3000 4100 3200
+Wire Wire Line
+	4950 1200 5350 1200
+Wire Wire Line
+	4950 3000 5500 3000
+Wire Wire Line
+	6050 1600 6150 1600
 Wire Wire Line
 	6200 3000 6350 3000
 Wire Wire Line
 	6200 3200 6350 3200
 Wire Wire Line
-	2100 3000 2100 3200
+	6200 3400 6300 3400
 Wire Wire Line
-	4100 3000 4100 3200
+	6350 2600 6350 2650
+Wire Wire Line
+	6350 2950 6350 3000
 Wire Wire Line
 	6350 3000 6350 3200
-Wire Wire Line
-	850  1150 1250 1150
-Wire Wire Line
-	2900 1200 3300 1200
-Wire Wire Line
-	4950 1200 5350 1200
-Wire Wire Line
-	700  3000 1250 3000
-Wire Wire Line
-	2700 3000 3250 3000
-Wire Wire Line
-	4950 3000 5500 3000
 Text HLabel 1250 1350 0    50   Input ~ 0
 X_Dir
 Text HLabel 1250 1550 0    50   Output ~ 0
