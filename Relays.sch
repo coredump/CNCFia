@@ -3,12 +3,12 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 2 6
 Title ""
 Date "2020-02-12"
 Rev "b5"
 Comp "c6p.dev"
-Comment1 ""
+Comment1 "Licensed under CERN OHL 1.2 (http://ohwr.org/cernohl)"
 Comment2 ""
 Comment3 ""
 Comment4 ""

@@ -33,6 +33,7 @@ fp-info-cache
 *.zip
 gerber/*
 *.pdf
+!cern_ohl_v_1_2_howto.pdf
 
 # Exported BOM files
 *.xml

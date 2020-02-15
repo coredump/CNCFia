@@ -6,9 +6,9 @@ encoding utf-8
 Sheet 1 6
 Title "CNC Generic Daughter Card"
 Date "2020-02-12"
-Rev "b5"
+Rev "b8"
 Comp "c6p.dev"
-Comment1 ""
+Comment1 "Licensed under CERN OHL 1.2 (http://ohwr.org/cernohl)"
 Comment2 ""
 Comment3 ""
 Comment4 ""
