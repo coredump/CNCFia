@@ -42,3 +42,17 @@ The 3904s driving the relays have a base current (Ib) of ~ 7.8 mA, that should b
 The LTV-847s are used with typical values for Vf and If, according to datasheet specs.
 
 The OPAMP output for the spindle can be regulated with a potentiometer and from the 3.3V PWM it can get values close to 11V with a 12V power source. Simulated circuit shows a 0.4s approximately time to get to the stable voltage.
+
+## License, Copyright and disclaimers
+
+Copyright Jose Junior <jose.junior@gmail.com> 2020.  
+
+This documentation describes Open Hardware and is licensed under the
+CERN OHL v. 1.2.  
+
+You may redistribute and modify this documentation under the terms of the
+[CERN OHL v.1.2.](http://ohwr.org/cernohl) This documentation is distributed
+**WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF
+MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A
+PARTICULAR PURPOSE**. Please see the CERN OHL v.1.2 for applicable
+conditions.
